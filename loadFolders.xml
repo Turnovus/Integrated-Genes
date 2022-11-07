@@ -1,0 +1,7 @@
+<loadFolders>
+    <v1.4>
+        <li>Common</li>
+        <li IfModActive="Ludeon.RimWorld.Royalty">Royalty</li>
+        <li IfModActive="Ludeon.RimWorld.Ideology">Ideology</li>
+    </v1.4>
+</loadFolders>

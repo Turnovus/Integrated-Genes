@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<ModMetaData>
+	<name>Integrated Genes</name>
+	<author>Turnovus</author>
+	<supportedVersions><li>1.4</li></supportedVersions>
+	<packageId>Turnovus.Biotech.IntegratedGenes</packageId>
+	<description>Adds genes focused around features from Royalty and Ideology.</description>
+
+	<modDependencies>
+		<li>
+			<packageId>Ludeon.RimWorld.Biotech</packageId>
+			<displayName>Biotech</displayName>
+			<downloadUrl>https://store.steampowered.com/app/1826140/RimWorld__Biotech/</downloadUrl>
+		</li>
+	</modDependencies>
+</ModMetaData>

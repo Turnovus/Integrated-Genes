@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Defs>
+
+    <NeedDef>
+        <defName>Turn_Need_GeneticMeditation</defName>
+        <label>meditation</label>
+        <needClass>IntegratedGenes.Need_GeneticMeditation</needClass>
+        <description>People with the meditation dependency gene must meditate on a regular basis. Without taking the time to properly clear their minds, they will suffer from mounting anxiety.</description>
+        <baseLevel>0.75</baseLevel>
+        <listPriority>596</listPriority>
+        <major>true</major>
+        <minIntelligence>ToolUser</minIntelligence>
+        <onlyIfCausedByGene>true</onlyIfCausedByGene>
+        <colonistsOnly>true</colonistsOnly>
+    </NeedDef>
+
+</Defs>

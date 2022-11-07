@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Defs>
+
+    <!-- Shared category -->
+    <GeneDef Name="Turn_HeatAnyGeneBase" Abstract="True">
+        <displayCategory>Psychic</displayCategory>
+        <exclusionTags>
+            <li>Turn_Exclusion_NeuralHeat</li>
+        </exclusionTags>
+    </GeneDef>
+
+    <!-- Shared symbols -->
+    <GeneDef ParentName="Turn_HeatAnyGeneBase" Name="Turn_HeatSlowerGeneBase" Abstract="True">
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>hot</symbol></li>
+                <li><symbol>slo</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <GeneDef ParentName="Turn_HeatAnyGeneBase" Name="Turn_HeatFasterGeneBase" Abstract="True">
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>cool</symbol></li>
+                <li><symbol>neuro</symbol></li>
+                <li><symbol>neu</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <!-- Lowest factor to highest factor -->
+    <GeneDef ParentName="Turn_HeatSlowerGeneBase">
+        <defName>Turn_Gene_VerySlowNeuralHeat</defName>
+        <label>severe heat retention</label>
+        <labelShortAdj>sup-retention</labelShortAdj>
+        <description>Carriers of this gene have a large amount of ambient neural entropy, which significantly slows their neural heat recovery.</description>
+        <iconPath>UI/Icons/Genes/Gene_VerySlowHeat</iconPath>
+        <displayOrderInCategory>3009</displayOrderInCategory>
+        <biostatMet>4</biostatMet>
+        <statFactors>
+            <PsychicEntropyRecoveryRate>0.5</PsychicEntropyRecoveryRate>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="Turn_HeatSlowerGeneBase">
+        <defName>Turn_Gene_SlowNeuralHeat</defName>
+        <label>heat retention</label>
+        <labelShortAdj>retention</labelShortAdj>
+        <description>Carriers of this gene have more ambient neural entropy than usual, which slows their neural heat recovery.</description>
+        <iconPath>UI/Icons/Genes/Gene_SlowHeat</iconPath>
+        <displayOrderInCategory>3010</displayOrderInCategory>
+        <biostatMet>2</biostatMet>
+        <statFactors>
+            <PsychicEntropyRecoveryRate>0.75</PsychicEntropyRecoveryRate>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="Turn_HeatFasterGeneBase">
+        <defName>Turn_Gene_FastNeuralHeat</defName>
+        <label>heat dispersal</label>
+        <labelShortAdj>disperal</labelShortAdj>
+        <description>Carriers of this gene develop more organized nerve clusters in certain areas of the brain, improving their neural heat recovery.</description>
+        <iconPath>UI/Icons/Genes/Gene_FastHeat</iconPath>
+        <displayOrderInCategory>3011</displayOrderInCategory>
+        <biostatMet>-2</biostatMet>
+        <statFactors>
+            <PsychicEntropyRecoveryRate>1.25</PsychicEntropyRecoveryRate>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="Turn_HeatFasterGeneBase">
+        <defName>Turn_Gene_VeryFastNeuralHeat</defName>
+        <label>super heat dispersal</label>
+        <labelShortAdj>sup-dispersal</labelShortAdj>
+        <description>Carriers of this gene develop denser, more organized nerve clusters in certain areas of the brain, significantly improving their neural heat recovery.</description>
+        <iconPath>UI/Icons/Genes/Gene_VeryFastHeat</iconPath>
+        <displayOrderInCategory>3012</displayOrderInCategory>
+        <biostatMet>-4</biostatMet>
+        <statFactors>
+            <PsychicEntropyRecoveryRate>1.5</PsychicEntropyRecoveryRate>
+        </statFactors>
+    </GeneDef>
+
+</Defs>

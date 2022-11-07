@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Defs>
+    <GeneDef>
+        <defName>Turn_Gene_MeditationNeed</defName>
+        <label>meditation dependency</label>
+        <labelShortAdj>medi-need</labelShortAdj>
+        <description>Carriers of this gene experience an increasing emotional anxiety. They must meditate regularly to clear their minds, even if they lack a psylink.</description>
+        <iconPath>UI/Icons/Genes/Gene_MeditationNeed</iconPath>
+        <displayCategory>Psychic</displayCategory>
+        <displayOrderInCategory>3019</displayOrderInCategory>
+        <causesNeed>Turn_Need_GeneticMeditation</causesNeed>
+        <biostatMet>3</biostatMet>
+        <minAgeActive>7</minAgeActive>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>brood</symbol></li>
+                <li><symbol>stress</symbol></li>
+                <li><symbol>medi</symbol></li>
+                <li>
+                    <symbol>medita</symbol>
+                    <weight>0.7</weight>
+                </li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li><symbol>mind</symbol></li>
+                <li><symbol>tor</symbol></li>
+            </suffixSymbols>
+        </symbolPack>
+    </GeneDef>
+</Defs>

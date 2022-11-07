@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Defs>
+    <GeneDef>
+        <defName>Turn_Gene_Blindness</defName>
+        <label>blind</label>
+        <description>Carriers of this gene are totally blind, due to degredation of the occipital lobe. Their eyes still see, but their mind cannot.</description>
+        <iconPath>UI/Icons/Genes/Gene_Blindness</iconPath>
+        <displayCategory>Miscellaneous</displayCategory>
+        <displayOrderInCategory>56</displayOrderInCategory>
+        <biostatMet>4</biostatMet>
+        <customEffectDescriptions>
+            <li MayRequire="Ludeon.RimWorld.Ideology">Satisfies blindness precept.</li>
+        </customEffectDescriptions>
+        <exclusionTags>
+            <li>ShootingAccuracy</li>
+            <li>Turn_Exclusion_DarkVision</li>
+        </exclusionTags>
+        <capMods>
+            <li>
+                <capacity>Sight</capacity>
+                <postFactor>-1</postFactor>
+            </li>
+        </capMods>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>dark</symbol></li>
+                <li><symbol>lost</symbol></li>
+                <li><symbol>gloom</symbol></li>
+                <li>
+                    <symbol>blind</symbol>
+                    <weight>1.5</weight>
+                </li>
+            </prefixSymbols>
+        </symbolPack>
+    </GeneDef>
+</Defs>
