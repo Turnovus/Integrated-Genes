@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Patch>
+    <!-- Darksight exclusion -->
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/GeneDef[defName="DarkVision"]/exclusionTags</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/GeneDef[defName="DarkVision"]</xpath>
+            <value>
+                <exclusionTags>
+                    <li>Turn_Exclusion_Vision</li>
+                </exclusionTags>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/GeneDef[defName="DarkVision"]/exclusionTags</xpath>
+            <value><li>Turn_Exclusion_Vision</li></value>
+        </match>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/GeneDef[defName="Nearsighted"]/exclusionTags</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/GeneDef[defName="Nearsighted"]</xpath>
+            <value>
+                <exclusionTags>
+                    <li>Turn_Exclusion_Vision</li>
+                </exclusionTags>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/GeneDef[defName="Nearsighted"]/exclusionTags</xpath>
+            <value><li>Turn_Exclusion_Vision</li></value>
+        </match>
+    </Operation>
+</Patch>

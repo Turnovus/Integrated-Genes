@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Defs>
+
+    <ThoughtDef>
+        <defName>Turn_Thought_Genetic_BeautyStandardUgliness</defName>
+        <workerClass>IntegratedGenes.ThoughtWorker_Ugly</workerClass>
+        <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+        <stages>
+            <li>
+                <label>ugly</label>
+                <description>I'm ugly. I can't believe that this is what people have to see when they look at me.</description>
+                <baseMoodEffect>-6</baseMoodEffect>
+            </li>
+            <li>
+                <label>hideous</label>
+                <description>I'm hideous! Everyone must despise me.</description>
+                <baseMoodEffect>-12</baseMoodEffect>
+            </li>
+        </stages>
+        <modExtensions>
+            <li Class="IntegratedGenes.DefExtension_GeneDef">
+                <geneDef>Turn_Gene_HighBeautyStandard</geneDef>
+            </li>
+        </modExtensions>
+    </ThoughtDef>
+
+</Defs>

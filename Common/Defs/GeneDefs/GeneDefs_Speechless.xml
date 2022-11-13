@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Defs>
+    <GeneDef>
+        <defName>Turn_Gene_Speechless</defName>
+        <label>speechless</label>
+        <description>Carriers of this gene are mentally incapable of forming words in the context of verbal communication.</description>
+        <iconPath>UI/Icons/Genes/Gene_Speechless</iconPath>
+        <displayCategory>Miscellaneous</displayCategory>
+        <displayOrderInCategory>119</displayOrderInCategory>
+        <biostatMet>2</biostatMet>
+        <exclusionTags>
+            <li>Voice</li>
+            <li>Turn_Exclusion_Speechless</li>
+        </exclusionTags>
+        <capMods>
+            <li>
+                <capacity>Talking</capacity>
+                <postFactor>-1</postFactor>
+            </li>
+        </capMods>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>hush</symbol></li>
+                <li><symbol>quiet</symbol></li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li><symbol>mute</symbol></li>
+            </suffixSymbols>
+        </symbolPack>
+    </GeneDef>
+</Defs>

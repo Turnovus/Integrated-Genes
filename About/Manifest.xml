@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Manifest>
     <identifier>IntegratedGenes</identifier>
-    <version>1.1.1</version>
-    <dependencies>
-		<li>Harmony</li>
-	</dependencies>
+    <version>1.2.0</version>
+    <dependencies/>
     <loadAfter/>
     <suggests/>
     <showCrossPromotions>true</showCrossPromotions>

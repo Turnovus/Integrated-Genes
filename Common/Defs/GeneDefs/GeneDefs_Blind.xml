@@ -13,8 +13,9 @@
             <li MayRequire="Ludeon.RimWorld.Ideology">Satisfies blindness precept.</li>
         </customEffectDescriptions>
         <exclusionTags>
-            <li>ShootingAccuracy</li>
-            <li>Turn_Exclusion_DarkVision</li>
+            <!--<li>ShootingAccuracy</li>-->
+            <li>Turn_Exclusion_Vision</li>
+            <li>Turn_Exclusion_Blindness</li>
         </exclusionTags>
         <capMods>
             <li>

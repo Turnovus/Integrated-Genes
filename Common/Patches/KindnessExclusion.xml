@@ -10,6 +10,7 @@
             <value>
                 <exclusionTags>
                     <li>Turn_Exclusion_KindInstinct</li>
+                    <li>Turn_Exclusion_Speechless</li>
                 </exclusionTags>
             </value>
         </nomatch>

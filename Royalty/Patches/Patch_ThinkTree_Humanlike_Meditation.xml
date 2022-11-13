@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Patch>
+
+    <!-- Whenever a humanlike is told to seek joy for need fulfillment, they will
+        also be told to seek meditation for need fulfillment. -->
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThinkTreeDef[defName="MainColonistBehaviorCore"]/thinkRoot/subNodes/li[@Class="ThinkNode_PrioritySorter"]/subNodes</xpath>
+        <value>
+            <li Class="IntegratedGenes.ThinkNode_Priority_GetMeditationGenetic">
+                <subNodes>
+                    <li Class="IntegratedGenes.JobGiver_FillMeditationNeed"/>
+                </subNodes>
+            </li>
+        </value>
+    </Operation>
+
+</Patch>

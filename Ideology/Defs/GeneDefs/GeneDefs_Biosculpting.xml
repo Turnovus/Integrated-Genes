@@ -56,7 +56,7 @@
             <li Class="IntegratedGenes.DefExtension_HediffAnnual">
                 <hediffDef>Turn_Hediff_Geneblight</hediffDef>
                 <letterString>Geneblight will progress over time, and cannot be treated normally. It must be removed by a biosculpter pod's healing cycle.</letterString>
-                <timesPerYear>4.0</timesPerYear>
+                <timesPerYear>3.7</timesPerYear>
             </li>
         </modExtensions>
     </GeneDef>

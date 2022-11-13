@@ -26,6 +26,9 @@
                 <li><symbol>neuro</symbol></li>
                 <li><symbol>neu</symbol></li>
             </prefixSymbols>
+            <suffixSymbols>
+                <li><symbol>caster</symbol></li>
+            </suffixSymbols>
         </symbolPack>
     </GeneDef>
 
