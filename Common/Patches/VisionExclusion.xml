@@ -8,13 +8,13 @@
             <xpath>Defs/GeneDef[defName="DarkVision"]</xpath>
             <value>
                 <exclusionTags>
-                    <li>Turn_Exclusion_Vision</li>
+                    <li>Turn_Exclusion_NightVision</li>
                 </exclusionTags>
             </value>
         </nomatch>
         <match Class="PatchOperationAdd">
             <xpath>Defs/GeneDef[defName="DarkVision"]/exclusionTags</xpath>
-            <value><li>Turn_Exclusion_Vision</li></value>
+            <value><li>Turn_Exclusion_NightVision</li></value>
         </match>
     </Operation>
 
@@ -24,13 +24,13 @@
             <xpath>Defs/GeneDef[defName="Nearsighted"]</xpath>
             <value>
                 <exclusionTags>
-                    <li>Turn_Exclusion_Vision</li>
+                    <li>Turn_Exclusion_NearSighted</li>
                 </exclusionTags>
             </value>
         </nomatch>
         <match Class="PatchOperationAdd">
             <xpath>Defs/GeneDef[defName="Nearsighted"]/exclusionTags</xpath>
-            <value><li>Turn_Exclusion_Vision</li></value>
+            <value><li>Turn_Exclusion_NearSighted</li></value>
         </match>
     </Operation>
 </Patch>

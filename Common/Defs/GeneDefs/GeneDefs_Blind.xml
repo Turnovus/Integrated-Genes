@@ -14,7 +14,8 @@
         </customEffectDescriptions>
         <exclusionTags>
             <!--<li>ShootingAccuracy</li>-->
-            <li>Turn_Exclusion_Vision</li>
+            <li>Turn_Exclusion_NightVision</li>
+            <li>Turn_Exclusion_NearSighted</li>
             <li>Turn_Exclusion_Blindness</li>
         </exclusionTags>
         <capMods>
