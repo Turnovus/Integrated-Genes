@@ -53,7 +53,7 @@
         <displayOrderInCategory>400</displayOrderInCategory>
         <causesNeed>Turn_Need_GeneticGauranlen</causesNeed>
         <biostatMet>5</biostatMet>
-        <minAgeActive>3</minAgeActive>
+        <minAgeActive>13</minAgeActive>
         <customEffectDescriptions>
             <li>The gauranlen need will be refilled as long as the pawn is within 15 tiles of a gauranlen tree.</li>
         </customEffectDescriptions>

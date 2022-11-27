@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Defs>
+    <GeneDef>
+        <defName>Turn_Gene_ArchotechAttunement</defName>
+        <label>archotech attunement</label>
+        <labelShortAdj>psylinked</labelShortAdj>
+        <description>Carriers of this gene have special archites in their neurons, maintaining and improving their psychic link to distant archotech intelligences.</description>
+        <geneClass>IntegratedGenes.Gene_PsylinkGiver</geneClass>
+        <iconPath>UI/Icons/Genes/Gene_ArchotechAttunement</iconPath>
+        <displayCategory>Archite</displayCategory>
+        <marketValueFactor>1.08</marketValueFactor>
+        <biostatCpx>2</biostatCpx>
+        <biostatArc>3</biostatArc>
+        <customEffectDescriptions>
+            <li>Periodically grants new psylink levels.</li>
+            <li>Grants abilities at a diminishing rate.</li>
+            <li>Requires an existing psylink.</li>
+        </customEffectDescriptions>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>brain</symbol></li>
+                <li><symbol>link</symbol></li>
+                <li><symbol>archo</symbol></li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li><symbol>linker</symbol></li>
+                <li><symbol>caster</symbol></li>
+            </suffixSymbols>
+        </symbolPack>
+        <modExtensions>
+            <li Class="IntegratedGenes.DefExtension_Float">
+                <!-- Years per level-up -->
+                <value>0.80</value>
+            </li>
+        </modExtensions>
+    </GeneDef>
+</Defs>

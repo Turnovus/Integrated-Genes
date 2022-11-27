@@ -11,6 +11,7 @@
         <exclusionTags>
             <li>Turn_Exclusion_KindInstinct</li>
             <li>Turn_Exclusion_Speechless</li>
+            <li>Turn_Exclusion_VREH_Grandiose</li>
         </exclusionTags>
         <forcedTraits>
             <li>
