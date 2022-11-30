@@ -3,5 +3,6 @@
         <li>Common</li>
         <li IfModActive="Ludeon.RimWorld.Royalty">Royalty</li>
         <li IfModActive="Ludeon.RimWorld.Ideology">Ideology</li>
+        <li IfModActive="VanillaExpanded.VPsycastsE">VPECompat</li>
     </v1.4>
 </loadFolders>
