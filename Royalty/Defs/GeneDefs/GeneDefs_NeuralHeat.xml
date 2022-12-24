@@ -40,7 +40,7 @@
         <description>Carriers of this gene have a large amount of ambient neural entropy, which significantly slows their neural heat recovery.</description>
         <iconPath>UI/Icons/Genes/Gene_VerySlowHeat</iconPath>
         <displayOrderInCategory>3009</displayOrderInCategory>
-        <biostatMet>4</biostatMet>
+        <biostatMet>2</biostatMet>
         <statFactors>
             <PsychicEntropyRecoveryRate>0.5</PsychicEntropyRecoveryRate>
         </statFactors>
@@ -53,7 +53,7 @@
         <description>Carriers of this gene have more ambient neural entropy than usual, which slows their neural heat recovery.</description>
         <iconPath>UI/Icons/Genes/Gene_SlowHeat</iconPath>
         <displayOrderInCategory>3010</displayOrderInCategory>
-        <biostatMet>2</biostatMet>
+        <biostatMet>1</biostatMet>
         <statFactors>
             <PsychicEntropyRecoveryRate>0.75</PsychicEntropyRecoveryRate>
         </statFactors>

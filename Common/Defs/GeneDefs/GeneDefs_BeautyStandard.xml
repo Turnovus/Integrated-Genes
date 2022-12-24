@@ -9,24 +9,29 @@
         </exclusionTags>
     </GeneDef>
 
-    <!-- Custom genes can't disable thoughts : (
-        Robust Digestion and Dark Vision are hardcoded
     <GeneDef ParentName="Turn_BeautyStandardGeneBase">
         <defName>Turn_Gene_LowBeautyStandard</defName>
-        <label>lowered beauty standard</label>
+        <label>low standards</label>
         <labelShortAdj>low standards</labelShortAdj>
-        <description>Carriers of this gene are incapable of feeling disgust towards other people. Though they are still capable of appreciating beauty.</description>
+        <description>Carriers of this gene are incapable of developing negative opinions of others without reason, though they are still capable of appreciating beauty.</description>
         <iconPath>UI/Icons/Genes/Gene_LowBeautyStandard</iconPath>
         <displayOrderInCategory>3050</displayOrderInCategory>
+        <customEffectDescriptions>
+            <li>Will ignore ugliness, annoying voice, creepy breathing, and disfigurement.</li>
+        </customEffectDescriptions>
+        <biostatMet>-1</biostatMet>
+        <suppressedTraits>
+            <li><def>DislikesMen</def></li>
+            <li><def>DislikesWomen</def></li>
+        </suppressedTraits>
     </GeneDef>
--->
  
     <GeneDef ParentName="Turn_BeautyStandardGeneBase">
         <defName>Turn_Gene_HighBeautyStandard</defName>
         <label>high standards</label>
         <labelShortAdj>picky</labelShortAdj>
         <description>Carriers of this gene are physically revolted by anyone they perceive as less attractive than themselves.</description>
-        <iconPath>UI/Icons/Genes/Gene_BeautyStandard</iconPath>
+        <iconPath>UI/Icons/Genes/Gene_HighBeautyStandard</iconPath>
         <displayOrderInCategory>3060</displayOrderInCategory>
         <customEffectDescriptions>
             <li>Mood penalty from low beauty</li>

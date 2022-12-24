@@ -7,17 +7,17 @@
         <thoughtClass>Thought_SituationalSocial</thoughtClass>
         <workerClass>IntegratedGenes.ThoughtWorker_GeneticHighBeautyStandard</workerClass>
         <validWhileDespawned>true</validWhileDespawned>
+
+        <requiredGenes>
+            <li>Turn_Gene_HighBeautyStandard</li>
+        </requiredGenes>
+
         <stages>
             <li>
                 <label>less attractive</label>
                 <baseOpinionOffset>-40</baseOpinionOffset>
             </li>
         </stages>
-        <modExtensions>
-            <li Class="IntegratedGenes.DefExtension_GeneDef">
-                <geneDef>Turn_Gene_HighBeautyStandard</geneDef>
-            </li>
-        </modExtensions>
     </ThoughtDef>
 
 </Defs>

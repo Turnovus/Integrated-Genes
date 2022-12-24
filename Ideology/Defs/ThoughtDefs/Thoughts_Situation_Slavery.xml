@@ -5,6 +5,11 @@
         <defName>Turn_Thought_Genetic_SubmissiveWantsMaster</defName>
         <workerClass>IntegratedGenes.ThoughtWorker_SlaveStatus</workerClass>
         <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+
+        <requiredGenes>
+            <li>Turn_Gene_AgressionSubmissive</li>
+        </requiredGenes>
+
         <stages>
             <li>
                 <label>not enslaved</label>
@@ -17,11 +22,5 @@
                 <baseMoodEffect>10</baseMoodEffect>
             </li>
         </stages>
-        <modExtensions>
-            <!-- Remove this extension, and all pawns will want to be slaves -->
-            <li Class="IntegratedGenes.DefExtension_GeneDef">
-                <geneDef>Turn_Gene_AgressionSubmissive</geneDef>
-            </li>
-        </modExtensions>
     </ThoughtDef>
 </Defs>

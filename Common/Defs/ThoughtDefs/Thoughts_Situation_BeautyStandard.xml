@@ -6,6 +6,11 @@
         <defName>Turn_Thought_Genetic_BeautyStandardUgliness</defName>
         <workerClass>IntegratedGenes.ThoughtWorker_Ugly</workerClass>
         <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+
+        <requiredGenes>
+            <li>Turn_Gene_HighBeautyStandard</li>
+        </requiredGenes>
+
         <stages>
             <li>
                 <label>ugly</label>
@@ -18,11 +23,6 @@
                 <baseMoodEffect>-12</baseMoodEffect>
             </li>
         </stages>
-        <modExtensions>
-            <li Class="IntegratedGenes.DefExtension_GeneDef">
-                <geneDef>Turn_Gene_HighBeautyStandard</geneDef>
-            </li>
-        </modExtensions>
     </ThoughtDef>
 
 </Defs>
