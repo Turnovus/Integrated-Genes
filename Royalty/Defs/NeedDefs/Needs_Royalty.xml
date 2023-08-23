@@ -17,7 +17,7 @@
         <modExtensions>
             <li Class="IntegratedGenes.DefExtension_NeedGenetic">
                 <fallFactor>0.2</fallFactor>
-                <riseFactor>1.4</riseFactor>
+                <riseFactor>1.2</riseFactor>
             </li>
         </modExtensions>
     </NeedDef>
