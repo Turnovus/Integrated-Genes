@@ -8,22 +8,13 @@
         <iconPath>UI/Icons/Genes/Gene_Grandiose</iconPath>
         <displayOrderInCategory>5001</displayOrderInCategory>
         <displayCategory>Mood</displayCategory>
-        <exclusionTags>
-            <li>Turn_Exclusion_KindInstinct</li>
-            <li>Turn_Exclusion_Speechless</li>
-            <li>Turn_Exclusion_VREH_Grandiose</li>
-        </exclusionTags>
         <forcedTraits>
-            <li>
-              <def>Abrasive</def>
-              <degree>0</degree>
-            </li>
             <li>
                 <def>Greedy</def>
                 <degree>0</degree>
             </li>
         </forcedTraits>
-        <biostatMet>2</biostatMet>
+        <biostatMet>1</biostatMet>
         <symbolPack>
             <prefixSymbols>
                 <li><symbol>mal</symbol></li>

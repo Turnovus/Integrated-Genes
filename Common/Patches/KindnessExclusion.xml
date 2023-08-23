@@ -9,7 +9,6 @@
             <xpath>Defs/GeneDef[defName="KindInstinct"]</xpath>
             <value>
                 <exclusionTags>
-                    <li>Turn_Exclusion_KindInstinct</li>
                     <li>Turn_Exclusion_Speechless</li>
                 </exclusionTags>
             </value>
@@ -17,7 +16,6 @@
         <match Class="PatchOperationAdd">
             <xpath>Defs/GeneDef[defName="KindInstinct"]/exclusionTags</xpath>
             <value>
-                <li>Turn_Exclusion_KindInstinct</li>
                 <li>Turn_Exclusion_Speechless</li>
             </value>
         </match>

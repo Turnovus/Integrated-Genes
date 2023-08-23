@@ -6,7 +6,7 @@
         <defName>Turn_Need_GeneticMeditation</defName>
         <label>meditation</label>
         <needClass>IntegratedGenes.Need_GeneticMeditation</needClass>
-        <description>People with the meditation dependency gene must meditate on a regular basis. Without taking the time to properly clear their minds, they will suffer from mounting anxiety.</description>
+        <description>People with the meditation dependency gene must meditate on a regular basis. Without taking the time to properly clear their minds, they will suffer from mounting anxiety.\n\nWhile meditating, they will also gain solace at a very slow rate. Solace is lost more slowly than meditation, and the current level of meditation can never fall below the current level of solace.</description>
         <baseLevel>0.75</baseLevel>
         <listPriority>596</listPriority>
         <major>true</major>
@@ -17,6 +17,7 @@
         <modExtensions>
             <li Class="IntegratedGenes.DefExtension_NeedGenetic">
                 <fallFactor>0.2</fallFactor>
+                <riseFactor>1.2</riseFactor>
             </li>
         </modExtensions>
     </NeedDef>

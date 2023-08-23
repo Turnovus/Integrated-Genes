@@ -4,6 +4,7 @@
 
     <!-- Whenever a humanlike is told to seek joy for need fulfillment, they will
         also be told to seek meditation for need fulfillment. -->
+<!--
     <Operation Class="PatchOperationAdd">
         <xpath>Defs/ThinkTreeDef[defName="MainColonistBehaviorCore"]/thinkRoot/subNodes/li[@Class="ThinkNode_PrioritySorter"]/subNodes</xpath>
         <value>
@@ -14,5 +15,6 @@
             </li>
         </value>
     </Operation>
+-->
 
 </Patch>

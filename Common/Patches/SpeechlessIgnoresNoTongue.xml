@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patch>
+
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PatchOperationConditional">
+                <xpath>Defs/ThoughtDef[defName="MissingTongue"]/nullifyingGenes</xpath>
+                <nomatch Class="PatchOperationAdd">
+                    <xpath>Defs/ThoughtDef[defName="MissingTongue"]</xpath>
+                    <value>
+                        <nullifyingGenes></nullifyingGenes>
+                    </value>
+                </nomatch>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThoughtDef[defName="MissingTongue"]/nullifyingGenes</xpath>
+                <value>
+                    <li>Turn_Gene_Speechless</li>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+
+</Patch>

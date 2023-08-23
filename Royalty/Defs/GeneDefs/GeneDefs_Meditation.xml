@@ -12,6 +12,9 @@
         <causesNeed>Turn_Need_GeneticMeditation</causesNeed>
         <biostatMet>3</biostatMet>
         <minAgeActive>7</minAgeActive>
+        <customEffectDescriptions>
+            <li>Requires time set aside for meditation in the carrier's schedule.</li>
+        </customEffectDescriptions>
         <symbolPack>
             <prefixSymbols>
                 <li><symbol>brood</symbol></li>

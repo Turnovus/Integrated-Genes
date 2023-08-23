@@ -17,7 +17,6 @@
                 <li Class="PatchOperationAdd">
                     <xpath>Defs/GeneDef[defName="VREH_Arrogant"]/exclusionTags</xpath>
                     <value>
-                        <li>Turn_Exclusion_VREH_Grandiose</li>
                         <li>Turn_Exclusion_VREH_Speechless</li>
                     </value>
                 </li>
