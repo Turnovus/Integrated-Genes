@@ -13,6 +13,7 @@
             <li>Voice</li>
             <li>Turn_Exclusion_Speechless</li>
             <li>Turn_Exclusion_VREH_Speechless</li>
+            <li>Turn_Exclusion_Speechless_NaturalLeader</li>
         </exclusionTags>
         <capMods>
             <li>

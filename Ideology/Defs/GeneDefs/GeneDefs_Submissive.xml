@@ -23,6 +23,9 @@
         <statFactors>
             <SlaveSuppressionFallRate>0.5</SlaveSuppressionFallRate>
         </statFactors>
+        <exclusionTags>
+            <li>Turn_Exclusion_FreeSpirit</li>
+        </exclusionTags>
         <biostatMet>-2</biostatMet>
         <symbolPack>
             <prefixSymbols>

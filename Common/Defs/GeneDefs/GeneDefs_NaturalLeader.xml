@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+    <GeneDef MayRequireAnyOf="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">
+        <defName>Turn_Gene_NaturalLeader</defName>
+        <label>natural leader</label>
+        <labelShortAdj>leading</labelShortAdj>
+        <description>Carriers of this gene develop a set of mental, emotional, and psychic traits that make them naturally adept at leading others.\n\nCarriers gain access to a special social interaction, which can temporarily boost the working speed of the recipient, as long as they do not also carry this gene.</description>
+        <iconPath>UI/Icons/Genes/Gene_NaturalLeader</iconPath>
+        <displayCategory>Miscellaneous</displayCategory>
+        <exclusionTags>
+            <li>Turn_Exclusion_Speechless_NaturalLeader</li>
+        </exclusionTags>
+
+        <customEffectDescriptions>
+            <li>Requires the carrier to have a special title or role.</li>
+            <li>Can inspire others to work faster by interacting with them.</li>
+            <li>Work speed bonus is affected by the following:</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">  Being the faction leader: +15%</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">  Being a moral guide: +10%</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">  Being a specialist: +5%</li>
+            <li MayRequire="Ludeon.RimWorld.Royalty">  Each rank of royal title: +2%</li>
+        </customEffectDescriptions>
+
+        <biostatMet>-1</biostatMet>
+    </GeneDef>
+
+</Defs>

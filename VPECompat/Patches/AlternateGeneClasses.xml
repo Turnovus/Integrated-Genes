@@ -2,14 +2,21 @@
 
 <Patch>
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/GeneDef[defName="Turn_Gene_ArchotechAttunement"]/geneClass</xpath>
+        <xpath>Defs/GeneDef[defName="Turn_Gene_ArchotechAttunement" or defName="Turn_Gene_LatentPsychic"]/geneClass</xpath>
         <value><geneClass>IntegratedGenes.VPECompat.Gene_PsylinkGiverVPE</geneClass></value>
     </Operation>
 
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/GeneDef[defName="Turn_Gene_ArchotechAttunement"]/modExtensions/li[@Class="IntegratedGenes.DefExtension_Float"]/value</xpath>
+        <xpath>Defs/GeneDef[defName="Turn_Gene_ArchotechAttunement"]/modExtensions/li[@Class="IntegratedGenes.DefExtension_Float"]/triggerIntervalYears</xpath>
         <value>
-            <value>0.30</value>
+            <triggerIntervalYears>0.30</triggerIntervalYears>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/GeneDef[defName="Turn_Gene_LatentPsychic"]/modExtensions/li[@Class="IntegratedGenes.DefExtension_Float"]/triggerIntervalYears</xpath>
+        <value>
+            <triggerIntervalYears>3.0</triggerIntervalYears>
         </value>
     </Operation>
 </Patch>

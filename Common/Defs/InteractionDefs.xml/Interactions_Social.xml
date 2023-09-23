@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+    <InteractionDef MayRequireAnyOf="Ludeon.Rimworld.Royalty,Ludeon.RimWorld.Ideology">
+        <defName>Turn_Interaction_InspiringLeadership</defName>
+        <label>inspiring leadership</label>
+        <workerClass>IntegratedGenes.InteractionWorker_InspiringLeadership</workerClass>
+        <symbol>Things/Mote/SpeechSymbols/KindWords</symbol> <!-- TODO -->
+
+        <logRulesInitiator>
+            <rulesStrings>
+                <li>r_logentry(p=3)->[INITIATOR_nameDef] [encouraged] [RECIPIENT_nameDef]'s [HardWorkingCharactersitic].</li>
+                <li>r_logentry->[INITIATOR_nameDef] [encouraged] [RECIPIENT_nameDef]'s [PersonalCharacteristic].</li>
+
+                <li>encouraged(p=3)->encouraged</li>
+                <li>encouraged->lauded</li>
+                <li>encouraged->said inspiring things about</li>
+
+            </rulesStrings>
+
+            <rulesFiles>
+                <li>HardWorkingCharactersitic->IntegratedGenes/Words/Nouns/HardWorkingCharacteristics</li>
+            </rulesFiles>
+        </logRulesInitiator>
+
+        <modExtensions>
+            <li Class="IntegratedGenes.DefExtension_LeadershipTuning">
+                <requiredGene>Turn_Gene_NaturalLeader</requiredGene>
+                <hediff>Turn_Hediff_InspiringLeadership</hediff>
+                <interactionWeight>1000</interactionWeight>
+                <offsetForTitleLevel>0.02</offsetForTitleLevel>
+                <offsetForFactionLeader>0.15</offsetForFactionLeader>
+                <offsetForIdeoMoralist>0.10</offsetForIdeoMoralist>
+                <offsetForIdeoSpecialist>0.05</offsetForIdeoSpecialist>
+            </li>
+        </modExtensions>
+    </InteractionDef>
+
+</Defs>

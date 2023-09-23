@@ -29,9 +29,42 @@
             </suffixSymbols>
         </symbolPack>
         <modExtensions>
-            <li Class="IntegratedGenes.DefExtension_Float">
+            <li Class="IntegratedGenes.DefExtension_PsychicGene">
                 <!-- Years per level-up -->
-                <value>0.80</value>
+                <triggerIntervalYears>0.80</triggerIntervalYears>
+            </li>
+        </modExtensions>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>Turn_Gene_LatentPsychic</defName>
+        <label>latent psychic</label>
+        <description>Carriers of this gene have an innate psychic attunement. This attunement does not provide an immediate psychic link, but may allow the carrier to form one naturally at some point in life.</description>
+        <geneClass>IntegratedGenes.Gene_PsylinkGiver</geneClass>
+        <iconPath>UI/Icons/Genes/Gene_LatentPsychic</iconPath><!-- TODO -->
+        <displayCategory>Psychic</displayCategory>
+        <biostatMet>-1</biostatMet>
+        <displayOrderInCategory>2022</displayOrderInCategory>
+        <customEffectDescriptions>
+            <li>May grant a level 1 psylink at random.</li>
+            <li>Periodically grants new psylink levels.</li>
+            <li>Grants abilities at a diminishing rate.</li>
+        </customEffectDescriptions>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>brain</symbol></li>
+                <li><symbol>link</symbol></li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li><symbol>linker</symbol></li>
+                <li><symbol>caster</symbol></li>
+            </suffixSymbols>
+        </symbolPack>
+        <modExtensions>
+            <li Class="IntegratedGenes.DefExtension_PsychicGene">
+                <triggerIntervalYears>5.5</triggerIntervalYears>
+                <!-- Roughly the age when the carrier should get their link -->
+                <grantPsylinkAgeYears>45.0</grantPsylinkAgeYears>
             </li>
         </modExtensions>
     </GeneDef>

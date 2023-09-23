@@ -23,4 +23,21 @@
             </li>
         </stages>
     </ThoughtDef>
+
+    <ThoughtDef>
+        <defName>Turn_Thought_FreeSpiritEnslaved</defName>
+        <workerClass>IntegratedGenes.ThoughtWorker_IsEnslaved</workerClass>
+
+        <requiredGenes>
+            <li>Turn_Gene_FreeSpirit</li>
+        </requiredGenes>
+
+        <stages>
+            <li>
+                <label>enslaved</label>
+                <description>I don't care if they kill me, I'd rather die than keep working for these freaks!</description>
+                <baseMoodEffect>-30</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
 </Defs>
