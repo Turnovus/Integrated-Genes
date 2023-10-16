@@ -1,0 +1,4 @@
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\IntegratedGenes\Common\Assemblies\IntegratedGenes.dll
+C:\Users\Turnovus\source\repos\IntegratedGenes\obj\Release\IntegratedGenes.csprojAssemblyReference.cache
+C:\Users\Turnovus\source\repos\IntegratedGenes\obj\Release\IntegratedGenes.csproj.CoreCompileInputs.cache
+C:\Users\Turnovus\source\repos\IntegratedGenes\obj\Release\IntegratedGenes.dll
