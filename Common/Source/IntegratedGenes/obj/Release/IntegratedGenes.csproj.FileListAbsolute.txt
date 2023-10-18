@@ -2,3 +2,7 @@ C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\IntegratedGenes\Comm
 C:\Users\Turnovus\source\repos\IntegratedGenes\obj\Release\IntegratedGenes.csprojAssemblyReference.cache
 C:\Users\Turnovus\source\repos\IntegratedGenes\obj\Release\IntegratedGenes.csproj.CoreCompileInputs.cache
 C:\Users\Turnovus\source\repos\IntegratedGenes\obj\Release\IntegratedGenes.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\IntegratedGenes\Common\Assemblies\IntegratedGenes.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\IntegratedGenes\Common\Source\IntegratedGenes\obj\Release\IntegratedGenes.csprojAssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\IntegratedGenes\Common\Source\IntegratedGenes\obj\Release\IntegratedGenes.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\IntegratedGenes\Common\Source\IntegratedGenes\obj\Release\IntegratedGenes.dll

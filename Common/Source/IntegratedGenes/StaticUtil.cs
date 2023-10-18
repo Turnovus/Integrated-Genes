@@ -12,6 +12,9 @@ namespace IntegratedGenes
     {
         private static IEnumerable<RoyalTitleDef> royalTitlesSorted;
 
+        public static ModSettings_IntegratedGenes Settings =>
+            LoadedModManager.GetMod<Mod_IntegratedGenes>().Settings;
+
         private static IEnumerable<RoyalTitleDef> RoyalTitlesSorted
         {
             get
