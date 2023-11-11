@@ -20,7 +20,7 @@ namespace IntegratedGenes
             p.ideo != null && p.genes != null && p.genes.HasGene(gene);
 
         public bool IsPawnInMainIdeo(Pawn p) =>
-            p.Faction?.ideos?.PrimaryIdeo != null && p.Faction.ideos.PrimaryIdeo == p.ideo.Ideo;
+            p.Faction?.ideos?.PrimaryIdeo != null && p.ideo?.Ideo != null && p.Faction.ideos.PrimaryIdeo == p.ideo.Ideo;
 
         public override void TransformValue(StatRequest req, ref float val)
         {
