@@ -16,8 +16,7 @@
             <li>May have violent mental breaks while imprisoned or enslaved.</li>
         </customEffectDescriptions>
 
-        <!-- TODO: Testing value, find a better balance later -->
-        <mentalBreakMtbDays>0.05</mentalBreakMtbDays>
+        <mentalBreakMtbDays>9</mentalBreakMtbDays>
         <mentalBreakDef>Turn_MentalBreak_FreeSpiritRampage</mentalBreakDef>
 
         <statFactors>
@@ -27,7 +26,7 @@
         </statFactors>
 
         <socialFightChanceFactor>1.2</socialFightChanceFactor>
-        <prisonBreakMTBFactor>0.1</prisonBreakMTBFactor>
+        <prisonBreakMTBFactor>0.7</prisonBreakMTBFactor>
         <displayOrderInCategory>2040</displayOrderInCategory>
         
         <biostatMet>1</biostatMet>

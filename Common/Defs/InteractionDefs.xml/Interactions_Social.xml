@@ -28,7 +28,7 @@
             <li Class="IntegratedGenes.DefExtension_LeadershipTuning">
                 <requiredGene>Turn_Gene_NaturalLeader</requiredGene>
                 <hediff>Turn_Hediff_InspiringLeadership</hediff>
-                <interactionWeight>1000</interactionWeight>
+                <interactionWeight>0.06</interactionWeight>
                 <offsetForTitleLevel>0.02</offsetForTitleLevel>
                 <offsetForFactionLeader>0.15</offsetForFactionLeader>
                 <offsetForIdeoMoralist>0.10</offsetForIdeoMoralist>
