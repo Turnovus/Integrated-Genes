@@ -121,10 +121,15 @@ namespace IntegratedGenes
 
             Command_Action linkAction = new Command_Action
             {
-                defaultLabel = "DEV: Trigger Psylink Gene",
+                defaultLabel = "DEV: Upgrade Psylink",
                 action = new Action(() => UpgradePsylink())
             };
             yield return linkAction;
+            Command_Action newLinkAction = new Command_Action
+            {
+                defaultLabel = "DEV: Grant Psylink",
+                action = new Action(() => GiveNewPsylink(pawn))
+            };
             Command_Action abilityAction = new Command_Action
             {
                 defaultLabel = "DEV: Random Ability",
