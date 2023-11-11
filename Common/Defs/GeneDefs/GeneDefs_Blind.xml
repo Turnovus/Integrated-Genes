@@ -21,7 +21,7 @@
         <capMods>
             <li>
                 <capacity>Sight</capacity>
-                <postFactor>-1</postFactor>
+                <postFactor>0</postFactor>
             </li>
         </capMods>
         <symbolPack>
