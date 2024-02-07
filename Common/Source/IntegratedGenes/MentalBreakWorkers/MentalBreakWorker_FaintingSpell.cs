@@ -59,13 +59,13 @@ namespace IntegratedGenes
                     continue;
                 foreach (LogEntry entry in battle.Entries)
                 {
-                    if (EntryIsHostiltyTowards(entry, pawn))
-                        return true;
-
                     // Newer entries come first, so stop here if we've exceeded
                     // the maximum time
                     if (entry.Timestamp + MAX_TICKS < GenTicks.TicksAbs)
                         break;
+
+                    if (EntryIsHostiltyTowards(entry, pawn))
+                        return true;
                 }
             }
             return false;
