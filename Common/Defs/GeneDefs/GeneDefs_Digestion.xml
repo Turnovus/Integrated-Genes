@@ -7,7 +7,7 @@
         <label>frail digestion</label>
         <description>Carriers of this gene grow a small, delicate stomach that struggles to digest unprocessed nutrients. Raw food provides them with less nutrition than usual, and can cause intense nausea.</description>
         <geneClass>IntegratedGenes.Gene_FrailDigestion</geneClass>
-        <iconPath>UI/Icons/Genes/Gene_FrailDigestion</iconPath> <!-- TODO -->
+        <iconPath>UI/Icons/Genes/Gene_FrailDigestion</iconPath>
         <displayCategory>Miscellaneous</displayCategory>
         <displayOrderInCategory>9</displayOrderInCategory>
         <biostatMet>2</biostatMet>

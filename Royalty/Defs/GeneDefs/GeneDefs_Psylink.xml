@@ -41,7 +41,7 @@
         <label>latent psychic</label>
         <description>Carriers of this gene have an innate psychic attunement. This attunement does not provide an immediate psychic link, but may allow the carrier to form one naturally at some point in life.</description>
         <geneClass>IntegratedGenes.Gene_PsylinkGiver</geneClass>
-        <iconPath>UI/Icons/Genes/Gene_LatentPsychic</iconPath><!-- TODO -->
+        <iconPath>UI/Icons/Genes/Gene_LatentPsychic</iconPath>
         <displayCategory>Psychic</displayCategory>
         <biostatMet>-1</biostatMet>
         <displayOrderInCategory>2022</displayOrderInCategory>
