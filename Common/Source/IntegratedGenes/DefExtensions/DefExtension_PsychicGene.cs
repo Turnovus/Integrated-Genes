@@ -13,6 +13,7 @@ namespace IntegratedGenes
 #pragma warning disable CS0649
         public float? grantPsylinkAgeYears = null;
         public float triggerIntervalYears = 1f;
+        public int? maxLevel = null;
 #pragma warning restore CS0649
     }
 }

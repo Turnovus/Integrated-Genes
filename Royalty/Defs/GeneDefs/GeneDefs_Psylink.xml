@@ -47,7 +47,7 @@
         <displayOrderInCategory>2022</displayOrderInCategory>
         <customEffectDescriptions>
             <li>May grant a level 1 psylink at random.</li>
-            <li>Periodically grants new psylink levels.</li>
+            <li>Periodically grants new psylink levels up to level 3.</li>
             <li>Grants abilities at a diminishing rate.</li>
         </customEffectDescriptions>
         <symbolPack>
@@ -65,6 +65,7 @@
                 <triggerIntervalYears>5.5</triggerIntervalYears>
                 <!-- Roughly the age when the carrier should get their link -->
                 <grantPsylinkAgeYears>45.0</grantPsylinkAgeYears>
+                <maxLevel>3</maxLevel>
             </li>
         </modExtensions>
     </GeneDef>

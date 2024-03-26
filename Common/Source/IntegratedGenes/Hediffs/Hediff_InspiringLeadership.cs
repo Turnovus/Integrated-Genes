@@ -25,8 +25,7 @@ namespace IntegratedGenes
             }
         }
 
-        // TODO: Translation Key
-        public override string LabelInBrackets => base.LabelInBrackets + ", " + Severity.ToStringPercent();
+        public override string LabelInBrackets => "InspiredLeadershipLabelBrackets".Translate(base.LabelInBrackets, Severity.ToStringPercent());
 
         public override string GetTooltip(Pawn pawn, bool showHediffsDebugInfo)
         {
@@ -34,9 +33,8 @@ namespace IntegratedGenes
             str.Append(base.GetTooltip(pawn, showHediffsDebugInfo));
             str.AppendLine();
 
-            // TODO: Translation Key
             foreach (Pawn p in inspirations.Keys)
-                str.AppendLine("  " + p.LabelShortCap + " - +" + inspirations[p].ToStringPercent());
+                str.AppendLine("InspiredLeadershipInspirationListing".Translate(p.LabelShortCap, inspirations[p].ToStringPercent()));
 
             return str.ToString();
         }

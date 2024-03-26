@@ -7,14 +7,14 @@
     </Operation>
 
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/GeneDef[defName="Turn_Gene_ArchotechAttunement"]/modExtensions/li[@Class="IntegratedGenes.DefExtension_Float"]/triggerIntervalYears</xpath>
+        <xpath>Defs/GeneDef[defName="Turn_Gene_ArchotechAttunement"]/modExtensions/li[@Class="IntegratedGenes.DefExtension_PsychicGene"]/triggerIntervalYears</xpath>
         <value>
             <triggerIntervalYears>0.30</triggerIntervalYears>
         </value>
     </Operation>
 
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/GeneDef[defName="Turn_Gene_LatentPsychic"]/modExtensions/li[@Class="IntegratedGenes.DefExtension_Float"]/triggerIntervalYears</xpath>
+        <xpath>Defs/GeneDef[defName="Turn_Gene_LatentPsychic"]/modExtensions/li[@Class="IntegratedGenes.DefExtension_PsychicGene"]/triggerIntervalYears</xpath>
         <value>
             <triggerIntervalYears>3.0</triggerIntervalYears>
         </value>

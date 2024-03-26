@@ -44,28 +44,40 @@ namespace IntegratedGenes
 
             if (!IsCarrierInBackground || StaticUtil.Settings.doUnspawnedLevels)
             {
-                if (Rand.MTBEventOccurs(GenDate.TicksPerYear * TriggerIntervalYears, 1f, CheckInterval))
-                    UpgradePsylink();
-
-                if (Rand.MTBEventOccurs(
-                    GenDate.TicksPerYear * TriggerIntervalYears * (float)GiveAbilityMtbFactor,
-                    1f, CheckInterval
-                ))
-                {
-                    GiveCompletelyRandomAbility();
-                }
+                DoUpgradeTick();
+                DoAbilityTick();
             }
 
-            if (CanGiveNewPsycast && (!IsCarrierInBackground || StaticUtil.Settings.doUnspawnedPsylink) &
-                Rand.MTBEventOccurs (
-                    GrantPsylinkAgeYears / pawn.genes.BiologicalAgeTickFactor,
-                    GenDate.TicksPerYear,
-                    CheckInterval
-                )
-            )
+            if (!IsCarrierInBackground || StaticUtil.Settings.doUnspawnedPsylink)
             {
-                GiveNewPsylink(pawn);
+                DoNewLinkTick();
             }
+        }
+
+        private void DoUpgradeTick()
+        {
+            if (Rand.MTBEventOccurs(GenDate.TicksPerYear * TriggerIntervalYears, 1f, CheckInterval))
+                UpgradePsylink();
+        }
+
+        private void DoAbilityTick()
+        {
+            if (Rand.MTBEventOccurs(
+                GenDate.TicksPerYear * TriggerIntervalYears * (float)GiveAbilityMtbFactor,
+                1f, CheckInterval
+            ))
+            {
+                GiveCompletelyRandomAbility();
+            }
+        }
+
+        private void DoNewLinkTick()
+        {
+            if (!CanGiveNewPsycast)
+                return;
+            if (!Rand.MTBEventOccurs(GrantPsylinkAgeYears / pawn.genes.BiologicalAgeTickFactor, GenDate.TicksPerYear, CheckInterval))
+                return;
+            GiveNewPsylink(pawn);
         }
 
         public override void PostAdd()
@@ -92,8 +104,20 @@ namespace IntegratedGenes
 
         public virtual void UpgradePsylink()
         {
-            if (!pawn.HasPsylink) return;
+            if (!pawn.HasPsylink || AtMaxLevel())
+                return;
             pawn.ChangePsylinkLevel(1);
+        }
+
+        private bool AtMaxLevel()
+        {
+            if (!Ext.maxLevel.HasValue)
+                return false;
+
+            Hediff_Level psylink = pawn.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.PsychicAmplifier) as Hediff_Level;
+            if (psylink == null || psylink.level < Ext.maxLevel)
+                return false;
+            return true;
         }
 
         public virtual void GiveCompletelyRandomAbility()
