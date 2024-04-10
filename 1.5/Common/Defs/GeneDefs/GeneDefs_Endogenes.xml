@@ -9,11 +9,23 @@
         <labelShortAdj>crown</labelShortAdj>
         <description>Carriers of this gene grow a "crown" of horns above their brow.</description>
         <iconPath>UI/Icons/Genes/Gene_HeadboneCrown</iconPath>
-        <graphicData>
-            <graphicPath>Things/Pawn/Humanlike/HeadAttachments/CrownHorns/CrownHorns</graphicPath>
-            <color>(255, 255, 255)</color>
-            <layer>PostHeadgear</layer>
-        </graphicData>
+        <renderNodeProperties>
+            <li>
+                <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+                <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+                <texPath>Things/Pawn/Humanlike/HeadAttachments/CrownHorns/CrownHorns</texPath>
+                <color>(255, 255, 255)</color>
+                <parentTagDef>Head</parentTagDef>
+                <drawData>
+                    <defaultData>
+                        <layer>80</layer>
+                    </defaultData>
+                    <dataNorth>
+                        <layer>10</layer>
+                    </dataNorth>
+                </drawData>
+            </li>
+        </renderNodeProperties>
         <symbolPack>
             <prefixSymbols>
                 <li><symbol>horn</symbol></li>

@@ -12,15 +12,26 @@
         <iconColor>(0.75, 0.75, 0.75)</iconColor>
         <displayOrderInCategory>500</displayOrderInCategory>
         <biostatCpx>0</biostatCpx>
-        <graphicData>
-            <graphicPaths>
-                <li>Things/Pawn/Humanlike/HeadAttachments/DryadFace/DryadFace</li>
-            </graphicPaths>
-            <visibleNorth>false</visibleNorth>
-            <layer>PostSkin</layer>
-            <colorType>Skin</colorType>
-            <colorRGBPostFactor>1</colorRGBPostFactor>
-            <narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
-        </graphicData>
+        <renderNodeProperties>
+            <li>
+                <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+                <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+                <parentTagDef>Head</parentTagDef>
+                <colorType>Skin</colorType>
+                <useRottenColor>true</useRottenColor>
+                <useSkinShader>true</useSkinShader>
+                <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                <texPaths>
+                    <li>Things/Pawn/Humanlike/HeadAttachments/DryadFace/DryadFace</li>
+                </texPaths>
+                <visibleFacing>
+                    <li>East</li>
+                    <li>South</li>
+                    <li>West</li>
+                </visibleFacing>
+                <narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
+                <baseLayer>51</baseLayer>
+            </li>
+        </renderNodeProperties>
     </GeneDef>
 </Defs>
