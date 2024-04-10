@@ -19,7 +19,7 @@
         <statFactors>
             <GeneralLaborSpeed>0.75</GeneralLaborSpeed>
         </statFactors>
-        <biostatMet>1</biostatMet>
+        <biostatMet>2</biostatMet>
     </GeneDef>
 
     <GeneDef ParentName="Turn_Gene_WorkSpeedBase">
@@ -30,7 +30,7 @@
         <iconPath>UI/Icons/Genes/Gene_MotivationHigh</iconPath>
         <displayOrderInCategory>22010</displayOrderInCategory>
         <statFactors>
-            <GeneralLaborSpeed>1.25</GeneralLaborSpeed>
+            <GeneralLaborSpeed>1.3</GeneralLaborSpeed>
         </statFactors>
         <biostatMet>-2</biostatMet>
     </GeneDef>
