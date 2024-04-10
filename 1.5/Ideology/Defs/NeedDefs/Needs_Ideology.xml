@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Defs>
+
+    <NeedDef>
+        <defName>Turn_Need_GeneticGauranlen</defName>
+        <label>gauranlen</label>
+        <needClass>IntegratedGenes.Need_GeneticGauranlen</needClass>
+        <description>People with the gauranlen dependency gene must be near a gauranlen tree frequently. Without the soothing psychic emanations of a dryad queen, they will suffer from mounting anxiety.</description>
+        <baseLevel>0.75</baseLevel>
+        <listPriority>597</listPriority>
+        <major>true</major>
+        <minIntelligence>ToolUser</minIntelligence>
+        <onlyIfCausedByGene>true</onlyIfCausedByGene>
+        <colonistAndPrisonersOnly>true</colonistAndPrisonersOnly>
+
+        <modExtensions>
+            <li Class="IntegratedGenes.DefExtension_NeedGenetic">
+                <riseFactor>2.0</riseFactor>
+                <fallFactor>0.8</fallFactor>
+            </li>
+        </modExtensions>
+    </NeedDef>
+
+</Defs>

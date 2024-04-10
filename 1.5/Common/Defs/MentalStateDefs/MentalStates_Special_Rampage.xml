@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+    <MentalBreakDef>
+        <defName>Turn_MentalBreak_FreeSpiritRampage</defName>
+        <label>rampage</label>
+        <intensity>Extreme</intensity>
+        <workerClass>IntegratedGenes.MentalBreakWorker_SlaveOrPrisoner</workerClass>
+        <mentalState>Turn_MentalState_Rampage</mentalState>
+        <requiredGene>Turn_Gene_FreeSpirit</requiredGene>
+    </MentalBreakDef>
+
+    <MentalStateDef>
+        <defName>Turn_MentalState_Rampage</defName>
+        <stateClass>IntegratedGenes.MentalState_Rampage</stateClass>
+        <label>rampaging</label>
+        <category>Aggro</category>
+
+        <blockInteractionInitiationExcept>
+            <li>Insult</li>
+        </blockInteractionInitiationExcept>
+        <blockInteractionRecipientExcept>
+            <li>Insult</li>
+        </blockInteractionRecipientExcept>
+        <blockRandomInteraction>true</blockRandomInteraction>
+
+        <blockNormalThoughts>true</blockNormalThoughts>
+        <nameColor>(0.9,0.2,0.5)</nameColor>
+        <beginLetter>{0} is lashing out against [PAWN_possessive] captors.\n\n[PAWN_pronoun] will attack any loyal member of your community that [PAWN_pronoun] sees.</beginLetter>
+        <beginLetterDef>ThreatSmall</beginLetterDef>
+        <minTicksBeforeRecovery>40000</minTicksBeforeRecovery>
+        <maxTicksBeforeRecovery>60000</maxTicksBeforeRecovery>
+        <recoveryMtbDays>0.166</recoveryMtbDays>
+        <recoveryMessage>{0}'s rampage has come to an end.</recoveryMessage>
+        <baseInspectLine>Mental state: Rampage</baseInspectLine>
+        <stateEffecter>Berserk</stateEffecter>
+        <tale>MentalStateBerserk</tale>
+        <recoverFromSleep>true</recoverFromSleep>
+        <inCaravanCanDo>false</inCaravanCanDo>
+    </MentalStateDef>
+</Defs>

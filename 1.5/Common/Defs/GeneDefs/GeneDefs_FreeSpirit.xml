@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+    <GeneDef>
+        <defName>Turn_Gene_FreeSpirit</defName>
+        <label>free spirit</label>
+        <description>Carriers of this gene develop a strong sense of self-importance. They absolutely despise being confined, imprisoned, enslaved, or otherwise made to submit to others, and will compulsively react to such subjugation in the form of violent outbursts.</description>
+        <iconPath>UI/Icons/Genes/Gene_FreeSpirit</iconPath>
+        <displayCategory>Violence</displayCategory>
+        <exclusionTags>
+            <li>Turn_Exclusion_FreeSpirit</li>
+            <li>Turn_Exclusion_FreeSpirit_DeadCalm</li>
+        </exclusionTags>
+        <customEffectDescriptions>
+            <li>May have violent mental breaks while imprisoned or enslaved.</li>
+        </customEffectDescriptions>
+
+        <mentalBreakMtbDays>9</mentalBreakMtbDays>
+        <mentalBreakDef>Turn_MentalBreak_FreeSpiritRampage</mentalBreakDef>
+
+        <statFactors>
+            <SlaveSuppressionFallRate MayRequire="Ludeon.RimWorld.Ideology">4.0</SlaveSuppressionFallRate>
+            <Terror MayRequire="Ludeon.RimWorld.Ideology">0.2</Terror>
+            <RoyalFavorValue MayRequire="Ludeon.RimWorld.Royalty">0.25</RoyalFavorValue>
+        </statFactors>
+
+        <socialFightChanceFactor>1.2</socialFightChanceFactor>
+        <prisonBreakMTBFactor>0.7</prisonBreakMTBFactor>
+        <displayOrderInCategory>2040</displayOrderInCategory>
+        
+        <biostatMet>1</biostatMet>
+    </GeneDef>
+
+</Defs>

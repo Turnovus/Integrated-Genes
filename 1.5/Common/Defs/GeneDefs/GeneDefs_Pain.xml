@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Defs>
+
+    <GeneDef ParentName="GenePainBase">
+        <defName>Turn_Gene_ConstantPain</defName>
+        <label>constant pain</label>
+        <labelShortAdj>pained</labelShortAdj>
+        <description>Carriers of these gene experience constant pain. A feedback loop in the brain's nociception center causes a constant perception of pain, even when no physical injury is present.</description>
+        <iconPath>UI/Icons/Genes/Gene_ConstantPain</iconPath>
+        <displayOrderInCategory>26</displayOrderInCategory>
+        <painOffset>0.15</painOffset>
+        <biostatMet>1</biostatMet>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>ag</symbol></li>
+                <li><symbol>cry</symbol></li>
+                <li><symbol>hurt</symbol></li>
+                <li><symbol>pain</symbol></li>
+                <li><symbol>suff</symbol></li>
+                <li><symbol>suffer</symbol></li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li><symbol>ony</symbol></li>
+            </suffixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+</Defs>

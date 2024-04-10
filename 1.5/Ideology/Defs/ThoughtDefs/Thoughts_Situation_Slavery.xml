@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Defs>
+    <ThoughtDef>
+        <defName>Turn_Thought_Genetic_SubmissiveWantsMaster</defName>
+        <workerClass>IntegratedGenes.ThoughtWorker_SlaveStatus</workerClass>
+        <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+
+        <requiredGenes>
+            <li>Turn_Gene_AgressionSubmissive</li>
+        </requiredGenes>
+
+        <stages>
+            <li>
+                <label>not enslaved</label>
+                <description>No masters to serve, no orders to follow. What am I supposed to do? What use am I?</description>
+                <baseMoodEffect>-10</baseMoodEffect>
+            </li>
+            <li>
+                <label>enslaved</label>
+                <description>This feels right, this is what I'm supposed to be doing.</description>
+                <baseMoodEffect>10</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+    <ThoughtDef>
+        <defName>Turn_Thought_FreeSpiritEnslaved</defName>
+        <workerClass>IntegratedGenes.ThoughtWorker_IsEnslaved</workerClass>
+
+        <requiredGenes>
+            <li>Turn_Gene_FreeSpirit</li>
+        </requiredGenes>
+
+        <stages>
+            <li>
+                <label>enslaved</label>
+                <description>I don't care if they kill me, I'd rather die than keep working for these freaks!</description>
+                <baseMoodEffect>-30</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+</Defs>

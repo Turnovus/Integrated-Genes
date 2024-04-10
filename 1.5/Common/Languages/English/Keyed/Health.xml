@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LanguageData>
+
+    <!-- Inspired leadership -->
+    <InspiredLeadershipLabelBrackets>{0}, {1}</InspiredLeadershipLabelBrackets>
+    <InspiredLeadershipInspirationListing> {0}: +{1}</InspiredLeadershipInspirationListing>
+
+</LanguageData>

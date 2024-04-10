@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Defs>
+    <GeneCategoryDef>
+        <defName>Turn_GeneCategory_Ideology</defName>
+        <label>ideology</label>
+        <!-- Just after psychic -->
+        <displayPriorityInXenotype>486</displayPriorityInXenotype>
+    </GeneCategoryDef>
+
+    <GeneCategoryDef>
+        <defName>Turn_GeneCategory_Slavery</defName>
+        <label>enslavement</label>
+        <!-- Just after violence -->
+        <displayPriorityInXenotype>426</displayPriorityInXenotype>
+    </GeneCategoryDef>
+</Defs>

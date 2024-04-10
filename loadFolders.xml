@@ -1,8 +1,15 @@
 <loadFolders>
     <v1.4>
-        <li>Common</li>
-        <li IfModActive="Ludeon.RimWorld.Royalty">Royalty</li>
-        <li IfModActive="Ludeon.RimWorld.Ideology">Ideology</li>
-        <li IfModActive="VanillaExpanded.VPsycastsE">VPECompat</li>
+        <li>1.4/Common</li>
+        <li IfModActive="Ludeon.RimWorld.Royalty">1.4/Royalty</li>
+        <li IfModActive="Ludeon.RimWorld.Ideology">1.4/Ideology</li>
+        <li IfModActive="VanillaExpanded.VPsycastsE">1.4/VPECompat</li>
     </v1.4>
+
+    <v1.5>
+        <li>1.5/Common</li>
+        <li IfModActive="Ludeon.RimWorld.Royalty">1.5/Royalty</li>
+        <li IfModActive="Ludeon.RimWorld.Ideology">1.5/Ideology</li>
+        <li IfModActive="VanillaExpanded.VPsycastsE">1.5/VPECompat</li>
+    </v1.5>
 </loadFolders>

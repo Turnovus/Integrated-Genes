@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+    <GeneDef>
+        <defName>Turn_Gene_FrailDigestion</defName>
+        <label>frail digestion</label>
+        <description>Carriers of this gene grow a small, delicate stomach that struggles to digest unprocessed nutrients. Raw food provides them with less nutrition than usual, and can cause intense nausea.</description>
+        <geneClass>IntegratedGenes.Gene_FrailDigestion</geneClass>
+        <iconPath>UI/Icons/Genes/Gene_FrailDigestion</iconPath>
+        <displayCategory>Miscellaneous</displayCategory>
+        <displayOrderInCategory>9</displayOrderInCategory>
+        <biostatMet>2</biostatMet>
+        <customEffectDescriptions>
+            <li>Raw food may cause vomiting.</li>
+        </customEffectDescriptions>
+        <exclusionTags>
+            <li>Turn_Exclusion_Digestion</li>
+            <li>MBSG_Digestion</li>
+        </exclusionTags>
+        <statFactors>
+            <RawNutritionFactor>0.45</RawNutritionFactor>
+        </statFactors>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>squeem</symbol></li>
+                <li><symbol>pick</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
+        <modExtensions>
+            <li Class="IntegratedGenes.DefExtension_Float">
+                <!-- Chance to vomit after eating raw food -->
+                <value>0.06</value>
+            </li>
+        </modExtensions>
+    </GeneDef>
+
+</Defs>

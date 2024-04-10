@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Defs>
+    
+    <!-- Headbone -->
+    <GeneDef ParentName="GeneHeadboneBase">
+        <defName>Turn_Gene_HeadboneCrown</defName>
+        <label>crown of horns</label>
+        <labelShortAdj>crown</labelShortAdj>
+        <description>Carriers of this gene grow a "crown" of horns above their brow.</description>
+        <iconPath>UI/Icons/Genes/Gene_HeadboneCrown</iconPath>
+        <graphicData>
+            <graphicPath>Things/Pawn/Humanlike/HeadAttachments/CrownHorns/CrownHorns</graphicPath>
+            <color>(255, 255, 255)</color>
+            <layer>PostHeadgear</layer>
+        </graphicData>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>horn</symbol></li>
+                <li><symbol>spike</symbol></li>
+                <li><symbol>roy</symbol></li>
+                <li><symbol>reg</symbol></li>
+                <li><symbol>crown</symbol></li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li><symbol>horn</symbol></li>
+                <li><symbol>spike</symbol></li>
+                <li><symbol>crown</symbol></li>
+            </suffixSymbols>
+        </symbolPack>
+    </GeneDef>
+</Defs>

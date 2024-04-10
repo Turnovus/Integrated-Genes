@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<LanguageData>
+
+    <!-- Disease -->
+    <LetterGeneDisease>{PAWN_label} has gotten sick from {1}.</LetterGeneDisease>
+    <LetterGeneDiseaseCause>Cause: </LetterGeneDiseaseCause>
+
+    <!-- Fainting spell mental break -->
+    <LetterTerrifiedFaintingMentalBreak>{0} has been overwhelmed by the stresses of combat, and has fainted. {PAWN_pronoun} will recover in a few hours.</LetterTerrifiedFaintingMentalBreak>
+    <LetterTerrifiedFaintingMentalBreakShort>{0} has fainted due to the stress of combat. {1}</LetterTerrifiedFaintingMentalBreakShort>
+
+    <!-- New Psycast Ability -->
+    <LetterLabelGeneGaveAbility>New ability: {0}</LetterLabelGeneGaveAbility>
+    <LetterGeneGaveAbility>{0} has acquired a new ability: {1}.\n\n{2}\n\nCause: {3}</LetterGeneGaveAbility>
+
+</LanguageData>
