@@ -10,7 +10,7 @@
         <iconPath>UI/Icons/Genes/Gene_FrailDigestion</iconPath>
         <displayCategory>Miscellaneous</displayCategory>
         <displayOrderInCategory>9</displayOrderInCategory>
-        <foodPoisoningChanceFactor>2</foodPoisoningChanceFactor>
+        <foodPoisoningChanceFactor>1.5</foodPoisoningChanceFactor>
         <biostatMet>3</biostatMet>
         <customEffectDescriptions>
             <li>Raw food may cause vomiting.</li>
