@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+    <ThoughtDef>
+        <defName>Turn_Thought_FreeSpiritImprisoned</defName>
+        <workerClass>IntegratedGenes.ThoughtWorker_HatesImprisonment</workerClass>
+        <developmentalStageFilter>Child, Adult</developmentalStageFilter>
+
+        <requiredGenes>
+            <li>Turn_Gene_FreeSpirit</li>
+        </requiredGenes>
+
+        <stages>
+            <li>
+                <label>imprisoned</label>
+                <description>I've been locked up against my will. How could anyone dare to confine me?</description>
+                <baseMoodEffect>-16</baseMoodEffect>
+            </li>
+            <li>
+                <label>imprisoned by my community</label>
+                <description>My own people turned against me and locked me up against my will. I refuse to accept such injustice!</description>
+                <baseMoodEffect>-40</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+</Defs>

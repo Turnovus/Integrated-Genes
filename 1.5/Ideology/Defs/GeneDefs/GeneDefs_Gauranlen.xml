@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Defs>
+
+    <GeneDef Name="Turn_GauranlenGeneBase" Abstract="True">
+        <displayCategory>Turn_GeneCategory_Ideology</displayCategory>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>dry</symbol></li>
+                <li><symbol>tree</symbol></li>
+                <!-- Weighted so that "gaur"-type prefixes don't crowd out others. -->
+                <li>
+                    <symbol>gau</symbol>
+                    <weight>0.5</weight>
+                </li>
+                <li>
+                    <symbol>gaur</symbol>
+                    <weight>0.3</weight>
+                </li>
+                <li>
+                    <symbol>gauran</symbol>
+                    <weight>0.2</weight>
+                </li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li><symbol>leaf</symbol></li>
+                <li><symbol>ad</symbol></li>
+                <li><symbol>tree</symbol></li>
+                <li><symbol>branch</symbol></li>
+            </suffixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <GeneDef ParentName="Turn_GauranlenGeneBase">
+        <defName>Turn_Gene_PruningAccelerated</defName>
+        <label>gauranlen tuned</label>
+        <labelShortAdj>pruning</labelShortAdj>
+        <description>Carriers of this gene have a natural link to gauranlen trees, and find it easier to maintain a link with their queen.</description>
+        <iconPath>UI/Icons/Genes/Gene_PruningAccelerated</iconPath>
+        <displayOrderInCategory>300</displayOrderInCategory>
+        <statOffsets>
+            <PruningSpeed>0.25</PruningSpeed>
+        </statOffsets>
+        <biostatMet>-2</biostatMet>
+    </GeneDef>
+
+    <GeneDef ParentName="Turn_GauranlenGeneBase">
+        <defName>Turn_Gene_GauranlenNeed</defName>
+        <label>gauranlen dependency</label>
+        <labelShortAdj>tree need</labelShortAdj>
+        <description>Carriers of this gene have a natural link to gauranlen trees. They need to be soothed by the psychic emanations of a dryad queen, and will suffer from mounting anxiety in the absense of a tree.</description>
+        <iconPath>UI/Icons/Genes/Gene_GauranlenNeed</iconPath>
+        <displayOrderInCategory>400</displayOrderInCategory>
+        <causesNeed>Turn_Need_GeneticGauranlen</causesNeed>
+        <biostatMet>5</biostatMet>
+        <minAgeActive>13</minAgeActive>
+        <customEffectDescriptions>
+            <li>The gauranlen need will be refilled as long as the pawn is within 15 tiles of a gauranlen tree.</li>
+        </customEffectDescriptions>
+    </GeneDef>
+
+</Defs>

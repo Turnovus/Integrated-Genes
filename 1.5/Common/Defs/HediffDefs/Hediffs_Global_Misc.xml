@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+    <HediffDef MayRequireAnyOf="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">
+        <defName>Turn_Hediff_InspiringLeadership</defName>
+        <label>inspiring leadership</label>
+        <description>Encouragement from at least one carrier of the natural leader gene to work harder.</description>
+        <hediffClass>IntegratedGenes.Hediff_InspiringLeadership</hediffClass>
+        <!-- Same color as ideo role buffs -->
+        <defaultLabelColor>(0.52, 1, 0.95)</defaultLabelColor>
+        <isBad>false</isBad>
+        <maxSeverity>0.50</maxSeverity>
+
+        <comps>
+            <li Class="HediffCompProperties_Disappears">
+                <!-- 6 hours. This is just the initial effect, further interactions will bump up the timer. -->
+                <disappearsAfterTicks>15000</disappearsAfterTicks>
+                <showRemainingTime>true</showRemainingTime>
+            </li>
+        </comps>
+
+        <stages>
+            <li>
+                <!-- This property is only used in vanilla by the deathrest perks, so I probably have sanguophages to thank for not needing to type out all 50 stages of work speed bonuses. -->
+                <multiplyStatChangesBySeverity>true</multiplyStatChangesBySeverity>
+                <statOffsets>
+                    <WorkSpeedGlobal>1.0</WorkSpeedGlobal>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+</Defs>

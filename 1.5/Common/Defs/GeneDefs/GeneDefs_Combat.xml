@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+    <GeneDef>
+        <defName>Turn_Gene_Duelist</defName>
+        <label>duelist</label>
+        <description>Carriers of this gene have improved reflexes and deft hand-eye coordination, making them fearsome opponents in melee engagements.</description>
+        <displayCategory>Violence</displayCategory>
+        <iconPath>UI/Icons/Genes/Gene_Duelist</iconPath>
+        <displayOrderInCategory>43</displayOrderInCategory>
+        <statFactors>
+            <MeleeHitChance>1.50</MeleeHitChance>
+            <MeleeDodgeChance>1.50</MeleeDodgeChance>
+        </statFactors>
+        <biostatMet>-2</biostatMet>
+        <exclusionTags>
+            <li>Turn_Exclusion_Duelist_Nonviolent</li>
+        </exclusionTags>
+    </GeneDef>
+
+</Defs>

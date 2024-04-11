@@ -3,8 +3,11 @@
 <ModMetaData>
 	<name>Integrated Genes</name>
 	<author>Turnovus</author>
-	<supportedVersions><li>1.4</li></supportedVersions>
-	<modVersion IgnoreIfNoMatchingField="True">1.4.1</modVersion>
+	<supportedVersions>
+		<li>1.4</li>
+		<li>1.5</li>
+	</supportedVersions>
+	<modVersion IgnoreIfNoMatchingField="True">1.5.0</modVersion>
 	<packageId>Turnovus.Biotech.IntegratedGenes</packageId>
 	<description>Adds genes focused around features from Royalty and Ideology.</description>
 

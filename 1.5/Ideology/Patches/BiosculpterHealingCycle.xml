@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Patch>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/ThingDef[defName="BiosculpterPod"]/comps/li[key="medic"]/conditionsToPossiblyCure</xpath>
+        <value>
+            <li>Turn_Hediff_Geneblight</li>
+        </value>
+    </Operation>
+
+</Patch>

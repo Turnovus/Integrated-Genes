@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LanguageData>
+    <IntegratedGenesMod>Integrated Genes</IntegratedGenesMod>
+
+    <IntegratedGenesSettings.doUnspawnedPsylink.Label>Grant psylinks to unspawned pawns</IntegratedGenesSettings.doUnspawnedPsylink.Label>
+    <IntegratedGenesSettings.doUnspawnedPsylink.Description>Allow genes like Latent Psychic to grant random psylinks to pawns that are not on a map, in a building, or in a caravan. Does not prevent pawns from initially spawning with psylinks from such genes.\n\nDefault: True</IntegratedGenesSettings.doUnspawnedPsylink.Description>
+
+    <IntegratedGenesSettings.doUnspawnedLevels.Label>Grant psychic levels to unspawned pawns</IntegratedGenesSettings.doUnspawnedLevels.Label>
+    <IntegratedGenesSettings.doUnspawnedLevels.Description>Allow genes like Archotech Attunement and Latent Psychic to grant additional psylink levels to pawns that are not on a map, in a building, or in a caravan. This only affects pawns that already have a psylink.\n\nDefault: False</IntegratedGenesSettings.doUnspawnedLevels.Description>
+
+    <IntegratedGenesSettings.doOutsiderLink.Label>Enable psylink spawns for outsiders</IntegratedGenesSettings.doOutsiderLink.Label>
+    <IntegratedGenesSettings.doOutsiderLink.Description>Allow genes like Latent Psychic to grant a psylink to their carrier upon being generated. Only affects pawns from non-player factions. Does not affect psylinks generated for other reasons.\n\nDefault: True</IntegratedGenesSettings.doOutsiderLink.Description>
+
+    <IntegratedGenesSettings.doNewColonistLink.Label>Enable psylink spawns for colonists</IntegratedGenesSettings.doNewColonistLink.Label>
+    <IntegratedGenesSettings.doNewColonistLink.Description>Allow genes like Latent Psychic to grant a psylink to their carrier upon being generated. This only affects colony pawns, like your starting colonists. Does not affect psylinks generated for other reasons.\n\nDefault: True</IntegratedGenesSettings.doNewColonistLink.Description>
+</LanguageData>

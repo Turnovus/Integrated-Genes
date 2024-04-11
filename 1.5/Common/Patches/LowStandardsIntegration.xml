@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Patch>
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PatchOperationConditional">
+                <xpath>Defs/ThoughtDef[defName="Ugly"]/nullifyingGenes</xpath>
+                <nomatch Class="PatchOperationAdd">
+                    <xpath>Defs/ThoughtDef[defName="Ugly"]</xpath>
+                    <value><nullifyingGenes/></value>
+                </nomatch>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThoughtDef[defName="Ugly"]/nullifyingGenes</xpath>
+                <value><li>Turn_Gene_LowBeautyStandard</li></value>
+            </li>
+        </operations>
+    </Operation>
+
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PatchOperationConditional">
+                <xpath>Defs/ThoughtDef[defName="AnnoyingVoice"]/nullifyingGenes</xpath>
+                <nomatch Class="PatchOperationAdd">
+                    <xpath>Defs/ThoughtDef[defName="AnnoyingVoice"]</xpath>
+                    <value><nullifyingGenes/></value>
+                </nomatch>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThoughtDef[defName="AnnoyingVoice"]/nullifyingGenes</xpath>
+                <value><li>Turn_Gene_LowBeautyStandard</li></value>
+            </li>
+        </operations>
+    </Operation>
+
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PatchOperationConditional">
+                <xpath>Defs/ThoughtDef[defName="CreepyBreathing"]/nullifyingGenes</xpath>
+                <nomatch Class="PatchOperationAdd">
+                    <xpath>Defs/ThoughtDef[defName="CreepyBreathing"]</xpath>
+                    <value><nullifyingGenes/></value>
+                </nomatch>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThoughtDef[defName="CreepyBreathing"]/nullifyingGenes</xpath>
+                <value><li>Turn_Gene_LowBeautyStandard</li></value>
+            </li>
+        </operations>
+    </Operation>
+
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PatchOperationConditional">
+                <xpath>Defs/ThoughtDef[defName="Disfigured"]/nullifyingGenes</xpath>
+                <nomatch Class="PatchOperationAdd">
+                    <xpath>Defs/ThoughtDef[defName="Disfigured"]</xpath>
+                    <value><nullifyingGenes/></value>
+                </nomatch>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/ThoughtDef[defName="Disfigured"]/nullifyingGenes</xpath>
+                <value><li>Turn_Gene_LowBeautyStandard</li></value>
+            </li>
+        </operations>
+    </Operation>
+
+</Patch>

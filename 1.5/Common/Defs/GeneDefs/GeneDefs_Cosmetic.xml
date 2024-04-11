@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Defs>
+
+    <!-- Skin color -->
+    <GeneDef ParentName="GeneSkinColorOverride">
+        <defName>Turn_Gene_SkinBrightOrange</defName>
+        <label>bright orange skin</label>
+        <labelShortAdj>very orange</labelShortAdj>
+        <description>Carriers of this gene produce a pigment that gives their skin a crisp orange color.</description>
+        <skinColorOverride>(255, 173, 51)</skinColorOverride>
+        <displayOrderInCategory>69.2</displayOrderInCategory>
+        <randomBrightnessFactor>0.1</randomBrightnessFactor>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>orange</symbol></li>
+                <li><symbol>carrot</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+</Defs>

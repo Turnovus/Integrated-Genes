@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Defs>
+
+    <ThoughtDef>
+        <defName>Turn_Thought_GeneticGauranlen</defName>
+        <workerClass>IntegratedGenes.ThoughtWorker_GeneticGauranlen</workerClass>
+        <validWhileDespawned>true</validWhileDespawned>
+        <stages>
+            <!-- need <= THRESH_CRIT -->
+            <li>
+                <label>tree sorely missed</label>
+                <description>My mind is cloudy, and I can barely think. What I would give to see a beautiful gauranlen tree.</description>
+                <baseMoodEffect>-20</baseMoodEffect>
+            </li>
+            <!-- need <= THRESH_LOW -->
+            <li>
+                <label>tree missed</label>
+                <description>My mind is foggy. I really want to spend some more time around a gauranlen tree.</description>
+                <baseMoodEffect>-10</baseMoodEffect>
+            </li>
+            <!-- need <= THRESH_MIN -->
+            <li>
+                <label>no tree</label>
+                <description>It's been a while since I've spent time near a gauranlen tree.</description>
+                <baseMoodEffect>-5</baseMoodEffect>
+            </li>
+            <!-- need > THRESH_HIGH -->
+            <li>
+                <label>calming tree</label>
+                <description>The beauty of the gauranlen tree is so calming.</description>
+                <baseMoodEffect>4</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+</Defs>
