@@ -10,8 +10,8 @@
         <iconPath>UI/Icons/Genes/Gene_Duelist</iconPath>
         <displayOrderInCategory>43</displayOrderInCategory>
         <statFactors>
-            <MeleeHitChance>1.25</MeleeHitChance>
-            <MeleeDodgeChance>1.25</MeleeDodgeChance>
+            <MeleeHitChance>1.50</MeleeHitChance>
+            <MeleeDodgeChance>1.50</MeleeDodgeChance>
         </statFactors>
         <biostatMet>-2</biostatMet>
         <exclusionTags>
