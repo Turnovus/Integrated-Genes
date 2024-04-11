@@ -6,7 +6,7 @@
         <defName>Turn_Interaction_InspiringLeadership</defName>
         <label>inspiring leadership</label>
         <workerClass>IntegratedGenes.InteractionWorker_InspiringLeadership</workerClass>
-        <symbol>Things/Mote/SpeechSymbols/InspiringLeadership</symbol>
+        <symbol>Things/Mote/SpeechSymbols/InspiredLeadership</symbol>
 
         <logRulesInitiator>
             <rulesStrings>
