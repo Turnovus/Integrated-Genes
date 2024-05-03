@@ -27,7 +27,7 @@ namespace IntegratedGenes
                     if (hediffInt == null)
                     {
                         Log.Error("Biosculpt gene has no hediff!");
-                        hediffInt = HediffDefOf.Flu;
+                        hediffInt = HediffDefOf.Hypothermia;
                     }
                 }
                 return hediffInt;
