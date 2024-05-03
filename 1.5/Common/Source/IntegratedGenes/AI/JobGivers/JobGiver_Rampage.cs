@@ -53,6 +53,6 @@ namespace IntegratedGenes
         public static bool IsValidTarget(Pawn pawn) =>
             pawn.Spawned &&
             !pawn.Downed &&
-            !pawn.IsInvisible();
+            !pawn.IsPsychologicallyInvisible();
     }
 }
