@@ -19,4 +19,24 @@
         </symbolPack>
     </GeneDef>
 
+    <GeneDef ParentName="GeneSkinColorOverride">
+        <defName>Turn_Gene_SkinFleshColor</defName>
+        <label>fleshy skin</label>
+        <labelShortAdj>fleshy</labelShortAdj>
+        <description>Carriers of this gene develop raw-looking pinkish skin, like a that of a shaved animal.</description>
+        <skinColorOverride>(206, 154, 156)</skinColorOverride>
+        <displayOrderInCategory>69.3</displayOrderInCategory>
+        <randomBrightnessFactor>0.2</randomBrightnessFactor>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>meat</symbol></li>
+                <li><symbol>flesh</symbol></li>
+                <li><symbol>skin</symbol></li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li><symbol>beast</symbol></li>
+            </suffixSymbols>
+        </symbolPack>
+    </GeneDef>
+
 </Defs>
