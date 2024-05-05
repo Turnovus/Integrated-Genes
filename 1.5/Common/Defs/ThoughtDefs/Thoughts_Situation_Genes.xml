@@ -10,11 +10,14 @@
         <requiredGenes>
             <li>Turn_Gene_Bliss</li>
         </requiredGenes>
+        <nullifyingHediffs>
+            <li>BlissLobotomy</li>
+        </nullifyingHediffs>
         <stages>
             <li>
                 <label>genetic bliss</label>
                 <description>Natural bonus from 'bliss' gene.</description>
-                <baseMoodEffect>14</baseMoodEffect>
+                <baseMoodEffect>12</baseMoodEffect>
             </li>
         </stages>
     </ThoughtDef>
