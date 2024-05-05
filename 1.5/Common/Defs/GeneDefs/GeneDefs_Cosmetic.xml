@@ -26,7 +26,7 @@
         <description>Carriers of this gene develop raw pinkish skin. It is not unlike the skin of a shaved animal, or a dry rash.</description>
         <skinColorOverride>(206, 154, 156)</skinColorOverride>
         <displayOrderInCategory>69.3</displayOrderInCategory>
-        <randomBrightnessFactor>0.2</randomBrightnessFactor>
+        <randomBrightnessFactor>0.5</randomBrightnessFactor>
         <symbolPack>
             <prefixSymbols>
                 <li><symbol>meat</symbol></li>
@@ -39,4 +39,60 @@
         </symbolPack>
     </GeneDef>
 
+    <!-- Eyes -->
+    <GeneDef ParentName="GeneEyeColor">
+        <defName>Turn_Gene_Eyes_Vacuous</defName>
+        <label>vacuous eyes</label>
+        <labelShortAdj>vacuous</labelShortAdj>
+        <description>Carriers of this gene have wide, empty eyes that seem to look right through everything.</description>
+        <iconPath>UI/Icons/Genes/Gene_RedEyes</iconPath> <!-- TODO -->
+        <displayOrderInCategory>2</displayOrderInCategory>
+
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>blank</symbol></li>
+                <li><symbol>gaze</symbol></li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li><symbol>stare</symbol></li>
+            </suffixSymbols>
+        </symbolPack>
+
+        <renderNodeProperties>
+            <li Class="PawnRenderNodeProperties_Eye">
+                <texPath>Things/Pawn/Humanlike/HeadAttachments/VacuousEyes</texPath>
+                <texPathFemale>Things/Pawn/Humanlike/HeadAttachments/VacuousEyes</texPathFemale>
+                <anchorTag>RightEye</anchorTag>
+                <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                <parentTagDef>Head</parentTagDef>
+                <drawSize>0.2</drawSize>
+                <side>Right</side>
+                <drawData>
+                    <defaultData>
+                        <layer>54</layer>
+                        <offset>(0, 0, -0.25)</offset>
+                    </defaultData>
+                </drawData>
+            </li>
+            <li Class="PawnRenderNodeProperties_Eye">
+                <texPath>Things/Pawn/Humanlike/HeadAttachments/VacuousEyes</texPath>
+                <texPathFemale>Things/Pawn/Humanlike/HeadAttachments/VacuousEyes</texPathFemale>
+                <anchorTag>LeftEye</anchorTag>
+                <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                <parentTagDef>Head</parentTagDef>
+                <drawSize>0.2</drawSize>
+                <side>Left</side>
+                <drawData>
+                    <defaultData>
+                        <layer>54</layer>
+                        <offset>(0, 0, -0.25)</offset>
+                        <flip>true</flip>
+                    </defaultData>
+                    <dataWest>
+                        <flip>false</flip>
+                    </dataWest>
+                </drawData>
+            </li>
+        </renderNodeProperties>
+    </GeneDef>
 </Defs>
