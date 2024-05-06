@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+    <GeneDef Name="Turn_FleshbeastGeneBase" Abstract="True">
+        <displayCategory>Turn_GeneCategory_Fleshbeast</displayCategory>
+    </GeneDef>
+
+    <!-- Mutating -->
+    <GeneDef ParentName="Turn_FleshbeastGeneBase">
+        <defName>Turn_Gene_FleshbeastMutating</defName>
+        <label>mutating</label>
+        <description>Carriers of this gene have bodies that are constantly changing and mutating. They will randomly acquire fleshbeast mutations over time, and their existing mutations may change form.</description>
+        <iconPath>UI/Icons/Genes/Gene_FleshbeastMutating</iconPath>
+        <displayOrderInCategory>0</displayOrderInCategory>
+        <biostatMet>1</biostatMet>
+        <biostatCpx>3</biostatCpx>
+    </GeneDef>
+
+    <!-- Mutant Regeneration -->
+    <GeneDef ParentName="Turn_FleshbeastGeneBase">
+        <defName>Turn_Gene_FleshbeastRegeneration</defName>
+        <label>mutant regeneration</label>
+        <description>Carriers of this gene have a limited ability to regenerate lost limbs, in the form of boneless tentacle-like extremeties.</description>
+        <iconPath>UI/Icons/Genes/Gene_FleshbeastRegeneration</iconPath>
+        <displayOrderInCategory>10</displayOrderInCategory>
+        <biostatMet>-2</biostatMet>
+    </GeneDef>
+
+    <!-- Detachable Limbs -->
+    <GeneDef ParentName="Turn_FleshbeastGeneBase">
+        <defName>Turn_Gene_DetachableLimbs</defName>
+        <label>detachable limbs</label>
+        <description>Carriers of this gene have bizarre semi-sentient neural structures and tourniquet-like muscles in their limbs. This allows them to deliberately detach their natural appendages, forming friendly fingerspikes to attack enemies.</description>
+        <iconPath>UI/Icons/Genes/Gene_DetachableLimbs</iconPath>
+        <displayOrderInCategory>20</displayOrderInCategory>
+        <biostatCpx>5</biostatCpx>
+    </GeneDef>
+
+    <!-- Mutating Touch -->
+    <GeneDef ParentName="Turn_FleshbeastGeneBase">
+        <defName>Turn_Gene_FleshbeastTouch</defName>
+        <label>mutagenic touch</label>
+        <description>Carriers of this gene constantly produce tumour-like growths in the palms of their hands, which can be implanted into hosts to cause radical anatomical changes.</description>
+        <iconPath>UI/Icons/Genes/Gene_FleshbeastTouch</iconPath>
+        <displayOrderInCategory>30</displayOrderInCategory>
+        <biostatMet>-3</biostatMet>
+        <biostatCpx>5</biostatCpx>
+    </GeneDef>
+
+    <!-- Body Quills -->
+    <GeneDef ParentName="Turn_FleshbeastGeneBase">
+        <defName>Turn_Gene_GorehulkQuills</defName>
+        <label>body quills</label>
+        <description>Carriers of this gene grow several sharp bioferrous quills from the torso, which protect them from harm. The quills can also be flung at enemies, but take time to regenerate.</description>
+        <iconPath>UI/Icons/Genes/Gene_GorehulkQuills</iconPath>
+        <displayOrderInCategory>40</displayOrderInCategory>
+        <biostatMet>-3</biostatMet>
+    </GeneDef>
+
+    <!-- Flesh Burster -->
+    <GeneDef ParentName="Turn_FleshbeastGeneBase">
+        <defName>Turn_Gene_FleshbeastBurster</defName>
+        <label>flesh burster</label>
+        <description>Carriers of this gene have bizarre semi-sentient neural structures throughout their bodies. Upon death, their flesh will tear itself apart, forming friendly fleshbeasts to seek retribution.</description>
+        <iconPath>UI/Icons/Genes/Gene_FleshbeastBurster</iconPath>
+        <displayOrderInCategory>50</displayOrderInCategory>
+        <biostatMet>-1</biostatMet>
+        <biostatCpx>5</biostatCpx>
+    </GeneDef>
+</Defs>

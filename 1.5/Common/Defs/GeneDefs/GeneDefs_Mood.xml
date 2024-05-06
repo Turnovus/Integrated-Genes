@@ -9,7 +9,7 @@
         <displayCategory>Mood</displayCategory>
         <iconPath>UI/Icons/Genes/Gene_Bliss</iconPath>
         <displayOrderInCategory>200</displayOrderInCategory>
-        <biostatCpx>5</biostatCpx>
+        <biostatCpx>6</biostatCpx>
         <symbolPack>
             <prefixSymbols>
                 <li><symbol>dull</symbol></li>
