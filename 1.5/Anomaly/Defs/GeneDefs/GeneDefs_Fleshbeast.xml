@@ -12,9 +12,41 @@
         <label>mutating</label>
         <description>Carriers of this gene have bodies that are constantly changing and mutating. They will randomly acquire fleshbeast mutations over time, and their existing mutations may change form.</description>
         <iconPath>UI/Icons/Genes/Gene_FleshbeastMutating</iconPath>
+        <geneClass>IntegratedGenes.Gene_FleshbeastMutating</geneClass>
         <displayOrderInCategory>0</displayOrderInCategory>
         <biostatMet>1</biostatMet>
         <biostatCpx>3</biostatCpx>
+        <minAgeActive>7</minAgeActive>
+
+        <modExtensions>
+            <li Class="IntegratedGenes.Extension_FleshbeastMutating">
+                <mutationMtbYears>0.2</mutationMtbYears>
+                <backgroundPawnMutationMtbFactor>40</backgroundPawnMutationMtbFactor> <!-- This means background pawns will get about one mutation roll per 8 years of age -->
+                <backroundMutationPerIntervalRandomRange>0.85~1.15</backroundMutationPerIntervalRandomRange>
+
+                <mutations>
+                    <li>
+                        <bodyPart>Shoulder</bodyPart>
+                        <randomMutations>
+                            <li>FleshWhip</li>
+                            <li>Tentacle</li>
+                        </randomMutations>
+                    </li>
+                    <li>
+                        <bodyPart>Stomach</bodyPart>
+                        <randomMutations>
+                            <li>FleshmassStomach</li>
+                        </randomMutations>
+                    </li>
+                    <li>
+                        <bodyPart>Lung</bodyPart>
+                        <randomMutations>
+                            <li>FleshmassLung</li>
+                        </randomMutations>
+                    </li>
+                </mutations>
+            </li>
+        </modExtensions>
     </GeneDef>
 
     <!-- Mutant Regeneration -->
