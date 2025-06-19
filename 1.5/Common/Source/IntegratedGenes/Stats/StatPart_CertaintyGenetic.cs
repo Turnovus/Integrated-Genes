@@ -17,7 +17,7 @@ namespace IntegratedGenes
 #pragma warning restore CS0649
 
         public bool ActiveForPawn(Pawn p) =>
-            p.ideo != null && p.genes != null && p.genes.HasGene(gene);
+            p.ideo != null && p.genes != null && p.genes.HasActiveGene(gene);
 
         public bool IsPawnInMainIdeo(Pawn p) =>
             p.Faction?.ideos?.PrimaryIdeo != null && p.ideo?.Ideo != null && p.Faction.ideos.PrimaryIdeo == p.ideo.Ideo;

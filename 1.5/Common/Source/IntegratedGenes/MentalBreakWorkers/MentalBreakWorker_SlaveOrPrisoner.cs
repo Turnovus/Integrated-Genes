@@ -23,7 +23,7 @@ namespace IntegratedGenes
             if (gene == null)
                 return false;
 
-            return pawn.genes?.HasGene(gene) == true;
+            return pawn.genes?.HasActiveGene(gene) == true;
         }
     }
 }
