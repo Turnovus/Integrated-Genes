@@ -86,6 +86,7 @@
     <Compile Include="AI\ThinkNodes\ThinkNode_Priority_GetMeditationGenetic.cs" />
     <Compile Include="StaticUtil.cs" />
     <Compile Include="Stats\StatPart_CertaintyGenetic.cs" />
+    <Compile Include="Stats\StatWorker_Fainting.cs" />
     <Compile Include="ThoughtWorkers\Mood\ThoughtWorker_GeneticGauranlen.cs" />
     <Compile Include="ThoughtWorkers\Mood\ThoughtWorker_GeneticMeditation.cs" />
     <Compile Include="ThoughtWorkers\Mood\ThoughtWorker_HatesImprisonment.cs" />
