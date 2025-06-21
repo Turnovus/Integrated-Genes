@@ -7,3 +7,5 @@ Common/Source/IntegratedGenes/obj/
 
 */Common/Source/IntegratedGenes/.idea
 */Common/Source/IntegratedGenes/packages
+
+*.user

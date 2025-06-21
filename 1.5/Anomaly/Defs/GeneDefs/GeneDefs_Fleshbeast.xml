@@ -55,8 +55,38 @@
         <label>mutant regeneration</label>
         <description>Carriers of this gene have a limited ability to regenerate lost limbs, in the form of boneless tentacle-like extremeties.</description>
         <iconPath>UI/Icons/Genes/Gene_FleshbeastRegeneration</iconPath>
+        <geneClass>IntegratedGenes.Gene_FleshbeastRegenerating</geneClass>
         <displayOrderInCategory>10</displayOrderInCategory>
         <biostatMet>-2</biostatMet>
+
+        <modExtensions>
+            <li Class="IntegratedGenes.Extension_FleshbeastRegenerating">
+                <regenerationHealthThreshold>0.45</regenerationHealthThreshold>
+                <limbRegenerationMtbDays>8</limbRegenerationMtbDays>
+
+                <mutations>
+                    <li>
+                        <bodyPart>Shoulder</bodyPart>
+                        <mutations>
+                            <li>FleshWhip</li>
+                            <li>Tentacle</li>
+                        </mutations>
+                    </li>
+                    <li>
+                        <bodyPart>Stomach</bodyPart>
+                        <mutations>
+                            <li>FleshmassStomach</li>
+                        </mutations>
+                    </li>
+                    <li>
+                        <bodyPart>Lung</bodyPart>
+                        <mutations>
+                            <li>FleshmassLung</li>
+                        </mutations>
+                    </li>
+                </mutations>
+            </li>
+        </modExtensions>
     </GeneDef>
 
     <!-- Detachable Limbs -->

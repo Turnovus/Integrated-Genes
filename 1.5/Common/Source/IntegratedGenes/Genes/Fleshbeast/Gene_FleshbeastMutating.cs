@@ -61,7 +61,7 @@ namespace IntegratedGenes
                 return;
 
             HediffDef removedMutation = ClearMutations(targetPart);
-            string removedString = removedMutation?.LabelCap ?? targetPart.LabelCap;
+            string removedString = removedMutation?.label ?? targetPart.Label;
             
             IntegratedFleshbeastUtility.DoMutation(pawn, targetPart, desiredMutation);
             if (!PawnUtility.ShouldSendNotificationAbout(pawn))
@@ -70,7 +70,7 @@ namespace IntegratedGenes
             TaggedString mutationMessage = "MessageGeneCausedMutation".Translate(
                 pawn.Named("PAWN"),
                 removedString,
-                desiredMutation.LabelCap);
+                desiredMutation.label);
             Messages.Message(mutationMessage, pawn, MessageTypeDefOf.NeutralEvent);
         }
 
