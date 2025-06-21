@@ -23,7 +23,7 @@
         <defName>Turn_Gene_SkinFleshColor</defName>
         <label>fleshy skin</label>
         <labelShortAdj>fleshy</labelShortAdj>
-        <description>Carriers of this gene develop raw pinkish skin. It is not unlike the skin of a shaved animal, or a dry rash.</description>
+        <description>Carriers of this gene develop raw pinkish skin.</description>
         <skinColorOverride>(206, 154, 156)</skinColorOverride>
         <displayOrderInCategory>69.3</displayOrderInCategory>
         <randomBrightnessFactor>0.5</randomBrightnessFactor>

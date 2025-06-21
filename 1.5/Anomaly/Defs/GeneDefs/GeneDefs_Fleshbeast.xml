@@ -105,7 +105,7 @@
     <GeneDef ParentName="Turn_FleshbeastGeneBase">
         <defName>Turn_Gene_FleshbeastTouch</defName>
         <label>mutagenic touch</label>
-        <description>Carriers of this gene constantly produce tumour-like growths in the palms of their hands, which can be implanted into hosts to cause radical anatomical changes.</description>
+        <description>Carriers of this gene constantly produce tumour-like growths that can be implanted into other hosts to cause radical anatomical changes.</description>
         <iconPath>UI/Icons/Genes/Gene_FleshbeastTouch</iconPath>
         <displayOrderInCategory>30</displayOrderInCategory>
         <biostatMet>-3</biostatMet>
@@ -116,7 +116,7 @@
     <GeneDef ParentName="Turn_FleshbeastGeneBase">
         <defName>Turn_Gene_GorehulkQuills</defName>
         <label>body quills</label>
-        <description>Carriers of this gene grow several sharp bioferrous quills from the torso, which protect them from harm. The quills can also be flung at enemies, but take time to regenerate.</description>
+        <description>Carriers of this gene grow several sharp bioferrous quills from the torso which protect them from harm. The quills can also be flung at enemies, but take time to regenerate.</description>
         <iconPath>UI/Icons/Genes/Gene_GorehulkQuills</iconPath>
         <displayOrderInCategory>40</displayOrderInCategory>
         <biostatMet>-3</biostatMet>
