@@ -9,9 +9,9 @@
         <category>BasicsPawn</category>
 
         <!-- Frequency in days -->
-        <!-- Default based on 0 terror and suppression offset -->
-        <defaultBaseValue>0.50</defaultBaseValue>
-        <minValue>0.10</minValue>
+        <!-- Default based on 0 terror -->
+        <defaultBaseValue>0.42</defaultBaseValue> <!-- ~10 hours -->
+        <minValue>0.05</minValue> <!-- ~1 hour -->
         <maxValue>5.00</maxValue>
 
         <workerClass>IntegratedGenes.StatWorker_Fainting</workerClass>

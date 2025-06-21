@@ -70,15 +70,14 @@
     <Compile Include="Genes\Gene_HediffAnnual.cs" />
     <Compile Include="Genes\Gene_LatentPsychic.cs" />
     <Compile Include="Genes\Gene_PsylinkGiver.cs" />
+    <Compile Include="Genes\Gene_Terrified.cs" />
     <Compile Include="Hediffs\Hediff_InspiringLeadership.cs" />
     <Compile Include="InteractionWorkers\InteractionWorker_InspiringLeadership.cs" />
     <Compile Include="MentalBreakWorkers\MentalBreakWorker_FaintingSpell.cs" />
     <Compile Include="MentalBreakWorkers\MentalBreakWorker_SlaveOrPrisoner.cs" />
     <Compile Include="MentalState\MentalState_Rampage.cs" />
     <Compile Include="Mod.cs" />
-    <Compile Include="MyDefOf\HediffDefOf.cs" />
-    <Compile Include="MyDefOf\JobDefOf.cs" />
-    <Compile Include="MyDefOf\NeedDefOf.cs" />
+    <Compile Include="MyDefOf\MyDefOf.cs" />
     <Compile Include="Needs\Need_Genetic.cs" />
     <Compile Include="Needs\Need_GeneticGauranlen.cs" />
     <Compile Include="Needs\Need_GeneticMeditation.cs" />

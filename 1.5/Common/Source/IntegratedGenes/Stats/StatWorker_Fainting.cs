@@ -6,7 +6,7 @@ namespace IntegratedGenes
 {
     public class StatWorker_Fainting : StatWorker
     {
-        private const float TerrorIntervalDenominator = 1.5f;
+        private const float TerrorIntervalDenominator = 1.15f;
         // From RimWorld.TerrorUtility
         private const int MaxTerror = 100;
         
@@ -26,18 +26,16 @@ namespace IntegratedGenes
         public override void FinalizeValue(StatRequest req, ref float val, bool applyPostProcess)
         {
             base.FinalizeValue(req, ref val, applyPostProcess);
-            
-            Pawn pawn = req.Thing as Pawn;
-            if (pawn != null)
+
+            if (req.Thing is Pawn pawn)
                 val *= GetTerrorIntervalFactor(pawn);
         }
 
         public override string GetExplanationUnfinalized(StatRequest req, ToStringNumberSense numberSense)
         {
             string explanation = base.GetExplanationUnfinalized(req, numberSense);
-            
-            Pawn pawn = req.Thing as Pawn;
-            if (pawn != null)
+
+            if (req.Thing is Pawn pawn)
             {
                 explanation += StatDefOf.Terror.LabelCap;
                 explanation += $" ({GetTerrorLevelNonSlave(pawn)}%): {GetTerrorIntervalFactor(pawn).ToStringByStyle(ToStringStyle.FloatTwo, ToStringNumberSense.Factor)}";
