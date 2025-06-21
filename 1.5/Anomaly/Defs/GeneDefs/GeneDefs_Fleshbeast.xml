@@ -60,6 +60,7 @@
     </GeneDef>
 
     <!-- Detachable Limbs -->
+    <!-- Cut, unfinished
     <GeneDef ParentName="Turn_FleshbeastGeneBase">
         <defName>Turn_Gene_DetachableLimbs</defName>
         <label>detachable limbs</label>
@@ -68,6 +69,7 @@
         <displayOrderInCategory>20</displayOrderInCategory>
         <biostatCpx>5</biostatCpx>
     </GeneDef>
+    -->
 
     <!-- Mutating Touch -->
     <GeneDef ParentName="Turn_FleshbeastGeneBase">
