@@ -16,7 +16,7 @@
             <li>Inhumanized</li>
         </nullifyingHediffs>
         <nullifyingPrecepts>
-            <li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">BodyMod_Approved</li>
         </nullifyingPrecepts>
 
         <stages>

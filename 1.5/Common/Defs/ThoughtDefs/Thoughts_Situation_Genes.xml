@@ -11,7 +11,7 @@
             <li>Turn_Gene_Bliss</li>
         </requiredGenes>
         <nullifyingHediffs>
-            <li>BlissLobotomy</li>
+            <li MayRequire="Ludeon.RimWorld.Anomaly">BlissLobotomy</li>
         </nullifyingHediffs>
         <stages>
             <li>
