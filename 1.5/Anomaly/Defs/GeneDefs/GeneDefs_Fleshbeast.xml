@@ -110,6 +110,12 @@
                             <li>FleshmassLung</li>
                         </mutations>
                     </li>
+                    <li>
+                        <bodyPart>Leg</bodyPart>
+                        <mutations>
+                            <li>Turn_Hediff_StumpLeg</li>
+                        </mutations>
+                    </li>
                 </mutations>
             </li>
         </modExtensions>
