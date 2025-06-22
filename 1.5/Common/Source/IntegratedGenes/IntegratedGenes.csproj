@@ -63,6 +63,7 @@
     <Compile Include="DefExtensions\DefExtension_LeadershipTuning.cs" />
     <Compile Include="DefExtensions\DefExtension_NeedGenetic.cs" />
     <Compile Include="DefExtensions\DefExtension_PsychicGene.cs" />
+    <Compile Include="Genes\Fleshbeast\Gene_FleshbeastBurster.cs" />
     <Compile Include="Genes\Fleshbeast\Gene_FleshbeastMutating.cs" />
     <Compile Include="Genes\Fleshbeast\Gene_FleshbeastRegenerating.cs" />
     <Compile Include="Genes\Fleshbeast\IntegratedFleshbeastUtility.cs" />

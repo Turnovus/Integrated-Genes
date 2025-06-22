@@ -162,8 +162,35 @@
         <label>flesh burster</label>
         <description>Carriers of this gene have bizarre semi-sentient neural structures throughout their bodies. Upon death, their flesh will tear itself apart, forming friendly fleshbeasts to seek retribution.</description>
         <iconPath>UI/Icons/Genes/Gene_FleshbeastBurster</iconPath>
+        <geneClass>IntegratedGenes.Gene_FleshbeastBurster</geneClass>
         <displayOrderInCategory>50</displayOrderInCategory>
         <biostatMet>-1</biostatMet>
         <biostatCpx>5</biostatCpx>
+
+        <modExtensions>
+            <li Class="IntegratedGenes.Extension_FleshbeastBurster">
+                <pawnKindsByWeight>
+                    <li>
+                        <key>Fingerspike</key>
+                        <value>5</value>
+                    </li>
+                    <li>
+                        <key>Trispike</key>
+                        <value>2.5</value>
+                    </li>
+                    <li>
+                        <key>Toughspike</key>
+                        <value>0.5</value>
+                    </li>
+                </pawnKindsByWeight>
+                <countParts>
+                    <li>Shoulder</li>
+                    <li>Leg</li>
+                    <li>Lung</li>
+                    <li>Stomach</li>
+                </countParts>
+                <spawnChancePerLimb>0.55</spawnChancePerLimb>
+            </li>
+        </modExtensions>
     </GeneDef>
 </Defs>
