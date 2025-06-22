@@ -18,6 +18,19 @@
         <biostatCpx>3</biostatCpx>
         <minAgeActive>7</minAgeActive>
 
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>flesh</symbol></li>
+                <li><symbol>morph</symbol></li>
+                <li><symbol>tenta</symbol></li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li><symbol>beast</symbol></li>
+                <li><symbol>freak</symbol></li>
+                <li><symbol>morph</symbol></li>
+            </suffixSymbols>
+        </symbolPack>
+
         <modExtensions>
             <li Class="IntegratedGenes.Extension_FleshbeastMutating">
                 <mutationMtbYears>0.2</mutationMtbYears>
@@ -58,6 +71,19 @@
         <geneClass>IntegratedGenes.Gene_FleshbeastRegenerating</geneClass>
         <displayOrderInCategory>10</displayOrderInCategory>
         <biostatMet>-2</biostatMet>
+
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>flesh</symbol></li>
+                <li><symbol>morph</symbol></li>
+                <li><symbol>tenta</symbol></li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li><symbol>beast</symbol></li>
+                <li><symbol>freak</symbol></li>
+                <li><symbol>morph</symbol></li>
+            </suffixSymbols>
+        </symbolPack>
 
         <modExtensions>
             <li Class="IntegratedGenes.Extension_FleshbeastRegenerating">
@@ -102,6 +128,7 @@
     -->
 
     <!-- Mutating Touch -->
+    <!-- Cut, unfinished
     <GeneDef ParentName="Turn_FleshbeastGeneBase">
         <defName>Turn_Gene_FleshbeastTouch</defName>
         <label>mutagenic touch</label>
@@ -111,6 +138,7 @@
         <biostatMet>-3</biostatMet>
         <biostatCpx>5</biostatCpx>
     </GeneDef>
+    -->
 
     <!-- Body Quills -->
     <GeneDef ParentName="Turn_FleshbeastGeneBase">
