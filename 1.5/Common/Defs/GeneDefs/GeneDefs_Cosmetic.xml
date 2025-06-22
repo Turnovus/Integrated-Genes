@@ -45,7 +45,7 @@
         <label>vacuous eyes</label>
         <labelShortAdj>vacuous</labelShortAdj>
         <description>Carriers of this gene have wide, empty eyes that seem to look right through everything.</description>
-        <iconPath>UI/Icons/Genes/Gene_RedEyes</iconPath> <!-- TODO -->
+        <iconPath>UI/Icons/Genes/Gene_VacuousEyes</iconPath>
         <displayOrderInCategory>2</displayOrderInCategory>
 
         <symbolPack>

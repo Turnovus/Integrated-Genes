@@ -36,8 +36,14 @@ namespace IntegratedGenes
         {
             if (pawn.health.hediffSet.PartIsMissing(part))
                 return false;
-            if (pawn.health.hediffSet.HasDirectlyAddedPartFor(part))
-                return false;
+
+            Hediff addedPart;
+            if (pawn.health.hediffSet.TryGetDirectlyAddedPartFor(part, out addedPart))
+            {
+                if (!addedPart.def.organicAddedBodypart)
+                    return false;
+            }
+            
             if (!Rand.Chance(Extension.spawnChancePerLimb))
                 return false;
 
