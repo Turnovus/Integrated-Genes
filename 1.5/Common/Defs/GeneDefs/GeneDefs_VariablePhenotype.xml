@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+    <GeneDef>
+        <defName>Turn_Gene_VariablePhenotype</defName>
+        <label>variable phenotype</label>
+        <description>Carriers of this gene have a very complex genome, but only a small fraction of this genotype is expressed in any one individual. This causes carriers to develop a handful of random xenogenes.</description>
+        <iconPath>UI/Icons/Genes/Gene_Inbred</iconPath> <!-- TODO -->
+
+        <geneClass>IntegratedGenes.Gene_VariablePhenotype</geneClass>
+
+        <biostatCpx>10</biostatCpx>
+
+        <displayCategory>Miscellaneous</displayCategory>
+        <displayOrderInCategory>2000</displayOrderInCategory>
+
+        <canGenerateInGeneSet>false</canGenerateInGeneSet>
+
+        <modExtensions>
+            <li Class="IntegratedGenes.Extension_VariablePhenotype">
+                <xenogeneCount>2~5</xenogeneCount>
+            </li>
+        </modExtensions>
+    </GeneDef>
+
+</Defs>

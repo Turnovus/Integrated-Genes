@@ -73,6 +73,7 @@
     <Compile Include="Genes\Gene_LatentPsychic.cs" />
     <Compile Include="Genes\Gene_PsylinkGiver.cs" />
     <Compile Include="Genes\Gene_Terrified.cs" />
+    <Compile Include="Genes\Gene_VariablePhenotype.cs" />
     <Compile Include="Hediffs\Hediff_InspiringLeadership.cs" />
     <Compile Include="InteractionWorkers\InteractionWorker_InspiringLeadership.cs" />
     <Compile Include="MentalBreakWorkers\MentalBreakWorker_FaintingSpell.cs" />
