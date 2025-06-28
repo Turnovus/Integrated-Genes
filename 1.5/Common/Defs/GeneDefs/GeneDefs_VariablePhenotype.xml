@@ -6,7 +6,7 @@
         <defName>Turn_Gene_VariablePhenotype</defName>
         <label>variable phenotype</label>
         <description>Carriers of this gene have a very complex genome, but only a small fraction of this genotype is expressed in any one individual. This causes carriers to develop a handful of random xenogenes.</description>
-        <iconPath>UI/Icons/Genes/Gene_Inbred</iconPath> <!-- TODO -->
+        <iconPath>UI/Icons/Genes/Gene_VariablePhenotype</iconPath>
 
         <geneClass>IntegratedGenes.Gene_VariablePhenotype</geneClass>
 
