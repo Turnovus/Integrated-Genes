@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+    <HediffDef>
+        <hediffClass>IntegratedGenes.Hediff_Quills</hediffClass>
+        <defName>Turn_Hediff_GorehulkQuills</defName>
+        <label>keratin quills</label>
+        <description>TODO</description>
+        <isBad>false</isBad>
+
+        <initialSeverity>0.01</initialSeverity>
+        <minSeverity>0.01</minSeverity>
+        <maxSeverity>5.5</maxSeverity>
+
+        <scenarioCanAdd>false</scenarioCanAdd>
+
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>0.6</severityPerDay>
+            </li>
+        </comps>
+
+        <modExtensions>
+            <li Class="IntegratedGenes.Extension_HediffQuills">
+                <geneDef>Turn_Gene_GorehulkQuills</geneDef>
+                <meleeReflectChance>0.40</meleeReflectChance>
+                <severityPerReflect>-0.1</severityPerReflect>
+            </li>
+        </modExtensions>
+    </HediffDef>
+</Defs>

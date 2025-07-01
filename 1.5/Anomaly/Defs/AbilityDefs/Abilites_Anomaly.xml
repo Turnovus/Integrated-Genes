@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <AbilityDef ParentName="SpikeLaunchBase">
+        <defName>Turn_Ability_GorehulkSpine</defName>
+        <label>spine launch</label>
+        <description>Hurl a sharp keratin spine at the target. The spine will need some time to regrow.</description>
+        <iconPath>UI/Abilities/PiercingSpine</iconPath> <!--TODO-->
+
+        <verbProperties>
+            <verbClass>IntegratedGenes.Verb_AbilityGorehulkSpine</verbClass>
+            <range>17.9</range>
+            <soundCast>Gorehulk_Spine_Launch</soundCast>
+            <defaultProjectile>Spine_Gorehulk</defaultProjectile>
+        </verbProperties>
+
+        <modExtensions>
+            <li Class="IntegratedGenes.Extension_AbilityGorehulkSpine">
+                <hediffDef>Turn_Hediff_GorehulkQuills</hediffDef>
+            </li>
+        </modExtensions>
+
+    </AbilityDef>
+
+</Defs>

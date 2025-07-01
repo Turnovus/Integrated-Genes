@@ -66,6 +66,7 @@
     <Compile Include="Genes\Fleshbeast\Gene_FleshbeastBurster.cs" />
     <Compile Include="Genes\Fleshbeast\Gene_FleshbeastMutating.cs" />
     <Compile Include="Genes\Fleshbeast\Gene_FleshbeastRegenerating.cs" />
+    <Compile Include="Genes\Fleshbeast\Gene_GorehulkQuills.cs" />
     <Compile Include="Genes\Fleshbeast\IntegratedFleshbeastUtility.cs" />
     <Compile Include="Genes\Gene_FrailDigestion.cs" />
     <Compile Include="Genes\Gene_GeneticBiosculpt.cs" />
@@ -75,6 +76,7 @@
     <Compile Include="Genes\Gene_Terrified.cs" />
     <Compile Include="Genes\Gene_VariablePhenotype.cs" />
     <Compile Include="Hediffs\Hediff_InspiringLeadership.cs" />
+    <Compile Include="Hediffs\Hediff_Quills.cs" />
     <Compile Include="InteractionWorkers\InteractionWorker_InspiringLeadership.cs" />
     <Compile Include="MentalBreakWorkers\MentalBreakWorker_FaintingSpell.cs" />
     <Compile Include="MentalBreakWorkers\MentalBreakWorker_SlaveOrPrisoner.cs" />
@@ -97,6 +99,7 @@
     <Compile Include="ThoughtWorkers\Mood\ThoughtWorker_SlaveStatus.cs" />
     <Compile Include="ThoughtWorkers\Mood\ThoughtWorker_Ugly.cs" />
     <Compile Include="ThoughtWorkers\Opinion\ThoughtWorker_GeneticHighBeautyStandard.cs" />
+    <Compile Include="Verb\Verb_AbilityGorehulkSpine.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

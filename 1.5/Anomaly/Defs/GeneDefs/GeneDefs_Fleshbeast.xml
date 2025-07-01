@@ -147,16 +147,31 @@
     -->
 
     <!-- Body Quills -->
-    <!-- Might add later
     <GeneDef ParentName="Turn_FleshbeastGeneBase">
         <defName>Turn_Gene_GorehulkQuills</defName>
         <label>body quills</label>
-        <description>Carriers of this gene grow several sharp bioferrous quills from the torso which protect them from harm. The quills can also be flung at enemies, but take time to regenerate.</description>
+        <description>Carriers of this gene grow several sharp keratin quills from the torso which protect them from harm. The quills can also be flung at enemies, but take time to regenerate.</description>
         <iconPath>UI/Icons/Genes/Gene_GorehulkQuills</iconPath>
+        <geneClass>IntegratedGenes.Gene_GorehulkQuills</geneClass>
         <displayOrderInCategory>40</displayOrderInCategory>
         <biostatMet>-3</biostatMet>
+
+        <marketValueFactor>1.5</marketValueFactor>
+
+        <abilities>
+            <li>Turn_Ability_GorehulkSpine</li>
+        </abilities>
+        <descriptionHyperlinks>
+            <AbilityDef>Turn_Ability_GorehulkSpine</AbilityDef>
+        </descriptionHyperlinks>
+
+        <modExtensions>
+            <li Class="IntegratedGenes.Extension_GorehulkQuills">
+                <hediffDef>Turn_Hediff_GorehulkQuills</hediffDef>
+                <hediffCheckIntervalTicks>600</hediffCheckIntervalTicks>
+            </li>
+        </modExtensions>
     </GeneDef>
-    -->
 
     <!-- Flesh Burster -->
     <GeneDef ParentName="Turn_FleshbeastGeneBase">
