@@ -6,9 +6,10 @@
         <label>spine launch</label>
         <description>Hurl a sharp keratin spine at the target. The spine will need some time to regrow.</description>
         <iconPath>UI/Abilities/PiercingSpine</iconPath> <!--TODO-->
+        <abilityClass>IntegratedGenes.Ability_GorehulkSpine</abilityClass>
 
         <verbProperties>
-            <verbClass>IntegratedGenes.Verb_AbilityGorehulkSpine</verbClass>
+            <!-- <verbClass>IntegratedGenes.Verb_AbilityGorehulkSpine</verbClass> -->
             <range>17.9</range>
             <soundCast>Gorehulk_Spine_Launch</soundCast>
             <defaultProjectile>Spine_Gorehulk</defaultProjectile>
