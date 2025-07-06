@@ -14,6 +14,7 @@ namespace IntegratedGenes
         {
             GeneDef geneDef = stat.GetModExtension<DefExtension_GeneDef>().geneDef;
             Pawn pawn = req.Thing as Pawn;
+            
             return pawn?.genes?.HasActiveGene(geneDef) ?? false;
         }
 
@@ -59,6 +60,9 @@ namespace IntegratedGenes
         // Partially copied from RimWorld.TerrorUtility
         private static int GetTerrorLevelNonSlave(Pawn pawn)
         {
+            if (pawn.needs?.mood?.thoughts.memories.Memories == null)
+                return 0;
+            
             int a = 0;
             foreach (Thought_MemoryObservationTerror terrorThought in TerrorUtility.GetTerrorThoughts(pawn))
                 a += terrorThought.intensity;
