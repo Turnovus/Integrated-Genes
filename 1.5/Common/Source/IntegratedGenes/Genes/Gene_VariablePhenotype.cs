@@ -65,6 +65,11 @@ namespace IntegratedGenes
             if (geneDef.prerequisite != null && !pawn.genes.HasActiveGene(geneDef.prerequisite))
                 return false;
             
+            // Genes are added after the pawn is generated, so we don't want to give e.g. non-violence to a pawn that
+            // is expected to be violent.
+            if ((geneDef.disabledWorkTags & pawn.kindDef.requiredWorkTags) != WorkTags.None)
+                return false;
+            
             if (pawn.genes.HasEndogene(geneDef) || pawn.genes.HasXenogene(geneDef))
                 return false;
             
