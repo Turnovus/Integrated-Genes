@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+    <ThoughtDef>
+        <defName>Turn_Thought_MoodOffsetBliss</defName>
+        <workerClass>ThoughtWorker_AlwaysActive</workerClass>
+        <validWhileDespawned>true</validWhileDespawned>
+        <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+        <requiredGenes>
+            <li>Turn_Gene_Bliss</li>
+        </requiredGenes>
+        <nullifyingHediffs>
+            <li MayRequire="Ludeon.RimWorld.Anomaly">BlissLobotomy</li>
+        </nullifyingHediffs>
+        <stages>
+            <li>
+                <label>genetic bliss</label>
+                <description>Natural bonus from 'bliss' gene.</description>
+                <baseMoodEffect>12</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+</Defs>

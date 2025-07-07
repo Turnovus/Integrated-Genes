@@ -10,6 +10,7 @@
         <li>1.5/Common</li>
         <li IfModActive="Ludeon.RimWorld.Royalty">1.5/Royalty</li>
         <li IfModActive="Ludeon.RimWorld.Ideology">1.5/Ideology</li>
+        <li IfModActive="Ludeon.RimWorld.Anomaly">1.5/Anomaly</li>
         <li IfModActive="VanillaExpanded.VPsycastsE">1.5/VPECompat</li>
     </v1.5>
 </loadFolders>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+    <GeneDef Name="Turn_FleshbeastGeneBase" Abstract="True">
+        <displayCategory>Turn_GeneCategory_Fleshbeast</displayCategory>
+    </GeneDef>
+
+    <!-- Mutating -->
+    <GeneDef ParentName="Turn_FleshbeastGeneBase">
+        <defName>Turn_Gene_FleshbeastMutating</defName>
+        <label>mutating</label>
+        <description>Carriers of this gene have bodies that are constantly changing and mutating. They will randomly acquire fleshbeast mutations over time, and their existing mutations may change form.</description>
+        <iconPath>UI/Icons/Genes/Gene_FleshbeastMutating</iconPath>
+        <geneClass>IntegratedGenes.Gene_FleshbeastMutating</geneClass>
+        <displayOrderInCategory>0</displayOrderInCategory>
+        <biostatMet>1</biostatMet>
+        <biostatCpx>3</biostatCpx>
+        <minAgeActive>7</minAgeActive>
+
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>flesh</symbol></li>
+                <li><symbol>morph</symbol></li>
+                <li><symbol>tenta</symbol></li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li><symbol>beast</symbol></li>
+                <li><symbol>freak</symbol></li>
+                <li><symbol>morph</symbol></li>
+            </suffixSymbols>
+        </symbolPack>
+
+        <modExtensions>
+            <li Class="IntegratedGenes.Extension_FleshbeastMutating">
+                <mutationMtbYears>0.2</mutationMtbYears>
+                <backgroundPawnMutationMtbFactor>40</backgroundPawnMutationMtbFactor> <!-- This means background pawns will get about one mutation roll per 8 years of age -->
+                <backroundMutationPerIntervalRandomRange>0.85~1.15</backroundMutationPerIntervalRandomRange>
+
+                <mutations>
+                    <li>
+                        <bodyPart>Shoulder</bodyPart>
+                        <randomMutations>
+                            <li>FleshWhip</li>
+                            <li>Tentacle</li>
+                        </randomMutations>
+                    </li>
+                    <li>
+                        <bodyPart>Stomach</bodyPart>
+                        <randomMutations>
+                            <li>FleshmassStomach</li>
+                        </randomMutations>
+                    </li>
+                    <li>
+                        <bodyPart>Lung</bodyPart>
+                        <randomMutations>
+                            <li>FleshmassLung</li>
+                        </randomMutations>
+                    </li>
+                </mutations>
+            </li>
+        </modExtensions>
+    </GeneDef>
+
+    <!-- Mutant Regeneration -->
+    <GeneDef ParentName="Turn_FleshbeastGeneBase">
+        <defName>Turn_Gene_FleshbeastRegeneration</defName>
+        <label>mutant regeneration</label>
+        <description>Carriers of this gene have a limited ability to regenerate lost limbs, in the form of boneless tentacle-like extremeties.</description>
+        <iconPath>UI/Icons/Genes/Gene_FleshbeastRegeneration</iconPath>
+        <geneClass>IntegratedGenes.Gene_FleshbeastRegenerating</geneClass>
+        <displayOrderInCategory>10</displayOrderInCategory>
+        <biostatMet>-2</biostatMet>
+
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>flesh</symbol></li>
+                <li><symbol>morph</symbol></li>
+                <li><symbol>tenta</symbol></li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li><symbol>beast</symbol></li>
+                <li><symbol>freak</symbol></li>
+                <li><symbol>morph</symbol></li>
+            </suffixSymbols>
+        </symbolPack>
+
+        <modExtensions>
+            <li Class="IntegratedGenes.Extension_FleshbeastRegenerating">
+                <regenerationHealthThreshold>0.45</regenerationHealthThreshold>
+                <limbRegenerationMtbDays>8</limbRegenerationMtbDays>
+
+                <mutations>
+                    <li>
+                        <bodyPart>Shoulder</bodyPart>
+                        <mutations>
+                            <li>FleshWhip</li>
+                            <li>Tentacle</li>
+                        </mutations>
+                    </li>
+                    <li>
+                        <bodyPart>Stomach</bodyPart>
+                        <mutations>
+                            <li>FleshmassStomach</li>
+                        </mutations>
+                    </li>
+                    <li>
+                        <bodyPart>Lung</bodyPart>
+                        <mutations>
+                            <li>FleshmassLung</li>
+                        </mutations>
+                    </li>
+                    <li>
+                        <bodyPart>Leg</bodyPart>
+                        <mutations>
+                            <li>Turn_Hediff_StumpLeg</li>
+                        </mutations>
+                    </li>
+                </mutations>
+            </li>
+        </modExtensions>
+    </GeneDef>
+
+    <!-- Detachable Limbs -->
+    <!-- Cut, unfinished
+    <GeneDef ParentName="Turn_FleshbeastGeneBase">
+        <defName>Turn_Gene_DetachableLimbs</defName>
+        <label>detachable limbs</label>
+        <description>Carriers of this gene have bizarre semi-sentient neural structures and tourniquet-like muscles in their limbs. This allows them to deliberately detach their natural appendages, forming friendly fingerspikes to attack enemies.</description>
+        <iconPath>UI/Icons/Genes/Gene_DetachableLimbs</iconPath>
+        <displayOrderInCategory>20</displayOrderInCategory>
+        <biostatCpx>5</biostatCpx>
+    </GeneDef>
+    -->
+
+    <!-- Mutating Touch -->
+    <!-- Cut, unfinished
+    <GeneDef ParentName="Turn_FleshbeastGeneBase">
+        <defName>Turn_Gene_FleshbeastTouch</defName>
+        <label>mutagenic touch</label>
+        <description>Carriers of this gene constantly produce tumour-like growths that can be implanted into other hosts to cause radical anatomical changes.</description>
+        <iconPath>UI/Icons/Genes/Gene_FleshbeastTouch</iconPath>
+        <displayOrderInCategory>30</displayOrderInCategory>
+        <biostatMet>-3</biostatMet>
+        <biostatCpx>5</biostatCpx>
+    </GeneDef>
+    -->
+
+    <!-- Body Quills -->
+    <!-- Might add later
+    <GeneDef ParentName="Turn_FleshbeastGeneBase">
+        <defName>Turn_Gene_GorehulkQuills</defName>
+        <label>body quills</label>
+        <description>Carriers of this gene grow several sharp bioferrous quills from the torso which protect them from harm. The quills can also be flung at enemies, but take time to regenerate.</description>
+        <iconPath>UI/Icons/Genes/Gene_GorehulkQuills</iconPath>
+        <displayOrderInCategory>40</displayOrderInCategory>
+        <biostatMet>-3</biostatMet>
+    </GeneDef>
+    -->
+
+    <!-- Flesh Burster -->
+    <GeneDef ParentName="Turn_FleshbeastGeneBase">
+        <defName>Turn_Gene_FleshbeastBurster</defName>
+        <label>flesh burster</label>
+        <description>Carriers of this gene have bizarre semi-sentient neural structures throughout their bodies. Upon death, their flesh will tear itself apart, forming hostile fleshbeasts to seek retribution.</description>
+        <iconPath>UI/Icons/Genes/Gene_FleshbeastBurster</iconPath>
+        <geneClass>IntegratedGenes.Gene_FleshbeastBurster</geneClass>
+        <displayOrderInCategory>50</displayOrderInCategory>
+        <biostatMet>1</biostatMet>
+        <biostatCpx>5</biostatCpx>
+
+        <modExtensions>
+            <li Class="IntegratedGenes.Extension_FleshbeastBurster">
+                <pawnKindsByWeight>
+                    <li>
+                        <key>Fingerspike</key>
+                        <value>5</value>
+                    </li>
+                    <li>
+                        <key>Trispike</key>
+                        <value>2.5</value>
+                    </li>
+                    <li>
+                        <key>Toughspike</key>
+                        <value>0.5</value>
+                    </li>
+                </pawnKindsByWeight>
+                <countParts>
+                    <li>Shoulder</li>
+                    <li>Leg</li>
+                    <li>Lung</li>
+                    <li>Stomach</li>
+                </countParts>
+                <spawnChancePerLimb>0.55</spawnChancePerLimb>
+            </li>
+        </modExtensions>
+    </GeneDef>
+</Defs>

@@ -11,12 +11,11 @@ namespace IntegratedGenes
 {
     class MentalBreakWorker_FaintingSpell : MentalBreakWorker
     {
-        // 30 real seconds
-        public const int MAX_TICKS = 60 * 30; // 1,800
+        private const int MaxTicks = GenTicks.TicksPerRealSecond * 30;
 
         public override bool BreakCanOccur(Pawn pawn)
         {
-            if (!base.BreakCanOccur(pawn) || !pawn.Spawned || pawn.Downed)
+            if (!base.BreakCanOccur(pawn))
                 return false;
             return AnyRecentBattleAttacksTowards(pawn);
         }
@@ -27,14 +26,14 @@ namespace IntegratedGenes
             bool causedByMood
         )
         {
-            // Send an alert first, in case we snap a slave out of its
-            // rebellion
+            // Send an alert first, in case we snap a slave out of its rebellion
             TrySendAlert(pawn, reason);
             pawn.health.AddHediff(
-                MyDefOf.HediffDefOf.Turn_Hediff_TerrifiedFaintingSpell);
+                MyDefOf.Turn_Hediff_TerrifiedFaintingSpell);
             return true;
         }
-
+        
+        // Send a letter under most circumstances, but just a message if the pawn is crazy or slave-rebelling
         public void TrySendAlert(Pawn pawn, string reason)
         {
             if (SlaveRebellionUtility.IsRebelling(pawn) ||
@@ -61,17 +60,17 @@ namespace IntegratedGenes
                 {
                     // Newer entries come first, so stop here if we've exceeded
                     // the maximum time
-                    if (entry.Timestamp + MAX_TICKS < GenTicks.TicksAbs)
+                    if (entry.Timestamp + MaxTicks < GenTicks.TicksAbs)
                         break;
 
-                    if (EntryIsHostiltyTowards(entry, pawn))
+                    if (EntryIsHostilityTowards(entry, pawn))
                         return true;
                 }
             }
             return false;
         }
 
-        public bool EntryIsHostiltyTowards(LogEntry entry, Pawn pawn)
+        public bool EntryIsHostilityTowards(LogEntry entry, Pawn pawn)
         {
             return (entry is BattleLogEntry_RangedFire ||
                 entry is BattleLogEntry_MeleeCombat ||

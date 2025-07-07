@@ -14,4 +14,10 @@
     <LetterLabelGeneGaveAbility>New ability: {0}</LetterLabelGeneGaveAbility>
     <LetterGeneGaveAbility>{0} has acquired a new ability: {1}.\n\n{2}\n\nCause: {3}</LetterGeneGaveAbility>
 
+    <!-- Fleshbeast mutation -->
+    <MessageGeneCausedMutation>{PAWN_labelShort}'s {1} has mutated into a {2}.</MessageGeneCausedMutation>
+
+    <!-- Fleshbeast regeneration -->
+    <MessageGeneMutantRegeneration>{PAWN_labelShort}'s damaged {1} has regenerated into a {2}.</MessageGeneMutantRegeneration>
+
 </LanguageData>

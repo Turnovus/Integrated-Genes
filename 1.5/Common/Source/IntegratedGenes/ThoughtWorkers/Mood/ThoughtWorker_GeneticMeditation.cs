@@ -11,6 +11,6 @@ namespace IntegratedGenes
     class ThoughtWorker_GeneticMeditation : ThoughtWorker_NeedGenetic
     {
         public override NeedDef Need =>
-            MyDefOf.NeedDefOf.Turn_Need_GeneticMeditation;
+            MyDefOf.Turn_Need_GeneticMeditation;
     }
 }

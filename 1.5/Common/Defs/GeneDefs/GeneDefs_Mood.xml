@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+    <GeneDef>
+        <defName>Turn_Gene_Bliss</defName>
+        <label>Blissful</label>
+        <description>Carriers of this gene have heavily degraded mental facaulties. They are considerably happier than usual, but are incapable of performing complex work.</description>
+        <displayCategory>Mood</displayCategory>
+        <iconPath>UI/Icons/Genes/Gene_Bliss</iconPath>
+        <displayOrderInCategory>200</displayOrderInCategory>
+        <biostatCpx>6</biostatCpx>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>dull</symbol></li>
+                <li><symbol>bliss</symbol></li>
+                <li><symbol>simple</symbol></li>
+                <li><symbol>fool</symbol></li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li><symbol>ton</symbol></li>
+                <li><symbol>fool</symbol></li>
+            </suffixSymbols>
+        </symbolPack>
+
+        <disabledWorkTags>
+            <li>Intellectual</li>
+            <li>ManualSkilled</li>
+        </disabledWorkTags>
+
+        <customEffectDescriptions MayRequire="Ludeon.RimWorld.Anomaly">
+            <li>Less effective than lobotomy.</li>
+            <li>A lobotomy may still be performed for the full effect.</li>
+        </customEffectDescriptions>
+    </GeneDef>
+
+</Defs>

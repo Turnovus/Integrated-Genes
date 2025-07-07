@@ -10,6 +10,6 @@ namespace IntegratedGenes
     class ThoughtWorker_GeneticGauranlen : ThoughtWorker_NeedGenetic
     {
         public override NeedDef Need =>
-            MyDefOf.NeedDefOf.Turn_Need_GeneticGauranlen;
+            MyDefOf.Turn_Need_GeneticGauranlen;
     }
 }

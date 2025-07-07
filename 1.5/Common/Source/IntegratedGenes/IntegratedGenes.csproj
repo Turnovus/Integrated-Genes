@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>IntegratedGenes</RootNamespace>
     <AssemblyName>IntegratedGenes</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
     <TargetFrameworkProfile />
@@ -63,20 +63,24 @@
     <Compile Include="DefExtensions\DefExtension_LeadershipTuning.cs" />
     <Compile Include="DefExtensions\DefExtension_NeedGenetic.cs" />
     <Compile Include="DefExtensions\DefExtension_PsychicGene.cs" />
+    <Compile Include="Genes\Fleshbeast\Gene_FleshbeastBurster.cs" />
+    <Compile Include="Genes\Fleshbeast\Gene_FleshbeastMutating.cs" />
+    <Compile Include="Genes\Fleshbeast\Gene_FleshbeastRegenerating.cs" />
+    <Compile Include="Genes\Fleshbeast\IntegratedFleshbeastUtility.cs" />
     <Compile Include="Genes\Gene_FrailDigestion.cs" />
     <Compile Include="Genes\Gene_GeneticBiosculpt.cs" />
     <Compile Include="Genes\Gene_HediffAnnual.cs" />
     <Compile Include="Genes\Gene_LatentPsychic.cs" />
     <Compile Include="Genes\Gene_PsylinkGiver.cs" />
+    <Compile Include="Genes\Gene_Terrified.cs" />
+    <Compile Include="Genes\Gene_VariablePhenotype.cs" />
     <Compile Include="Hediffs\Hediff_InspiringLeadership.cs" />
     <Compile Include="InteractionWorkers\InteractionWorker_InspiringLeadership.cs" />
     <Compile Include="MentalBreakWorkers\MentalBreakWorker_FaintingSpell.cs" />
     <Compile Include="MentalBreakWorkers\MentalBreakWorker_SlaveOrPrisoner.cs" />
     <Compile Include="MentalState\MentalState_Rampage.cs" />
     <Compile Include="Mod.cs" />
-    <Compile Include="MyDefOf\HediffDefOf.cs" />
-    <Compile Include="MyDefOf\JobDefOf.cs" />
-    <Compile Include="MyDefOf\NeedDefOf.cs" />
+    <Compile Include="MyDefOf\MyDefOf.cs" />
     <Compile Include="Needs\Need_Genetic.cs" />
     <Compile Include="Needs\Need_GeneticGauranlen.cs" />
     <Compile Include="Needs\Need_GeneticMeditation.cs" />
@@ -84,6 +88,7 @@
     <Compile Include="AI\ThinkNodes\ThinkNode_Priority_GetMeditationGenetic.cs" />
     <Compile Include="StaticUtil.cs" />
     <Compile Include="Stats\StatPart_CertaintyGenetic.cs" />
+    <Compile Include="Stats\StatWorker_Fainting.cs" />
     <Compile Include="ThoughtWorkers\Mood\ThoughtWorker_GeneticGauranlen.cs" />
     <Compile Include="ThoughtWorkers\Mood\ThoughtWorker_GeneticMeditation.cs" />
     <Compile Include="ThoughtWorkers\Mood\ThoughtWorker_HatesImprisonment.cs" />
@@ -93,6 +98,15 @@
     <Compile Include="ThoughtWorkers\Mood\ThoughtWorker_Ugly.cs" />
     <Compile Include="ThoughtWorkers\Opinion\ThoughtWorker_GeneticHighBeautyStandard.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="packages\Microsoft.NETFramework.ReferenceAssemblies.net472.1.0.3\build\Microsoft.NETFramework.ReferenceAssemblies.net472.targets" Condition="Exists('packages\Microsoft.NETFramework.ReferenceAssemblies.net472.1.0.3\build\Microsoft.NETFramework.ReferenceAssemblies.net472.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105.The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.NETFramework.ReferenceAssemblies.net472.1.0.3\build\Microsoft.NETFramework.ReferenceAssemblies.net472.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.NETFramework.ReferenceAssemblies.net472.1.0.3\build\Microsoft.NETFramework.ReferenceAssemblies.net472.targets'))" />
+  </Target>
 </Project>

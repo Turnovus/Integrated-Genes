@@ -22,7 +22,7 @@ namespace IntegratedGenes
                 return 0f;
 
             Need need = pawn.needs.TryGetNeed(
-                MyDefOf.NeedDefOf.Turn_Need_GeneticMeditation);
+                MyDefOf.Turn_Need_GeneticMeditation);
 
             // If the pawn is hungry, don't meditate
             if (pawn.needs.food.CurCategory > HungerCategory.UrgentlyHungry)

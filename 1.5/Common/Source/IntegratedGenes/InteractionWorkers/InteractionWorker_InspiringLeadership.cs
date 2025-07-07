@@ -22,8 +22,8 @@ namespace IntegratedGenes
             if (RequiredGene == null)
                 return 0f;
             if (
-                initiator.genes?.HasGene(RequiredGene) != true ||
-                recipient.genes?.HasGene(RequiredGene) == true
+                initiator.genes?.HasActiveGene(RequiredGene) != true ||
+                recipient.genes?.HasActiveGene(RequiredGene) == true
             )
                 return 0f;
 
