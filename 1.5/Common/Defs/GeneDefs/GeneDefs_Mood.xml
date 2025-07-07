@@ -10,7 +10,6 @@
         <iconPath>UI/Icons/Genes/Gene_Bliss</iconPath>
         <displayOrderInCategory>200</displayOrderInCategory>
         <biostatCpx>6</biostatCpx>
-        <biostatMet>2</biostatMet>
         <symbolPack>
             <prefixSymbols>
                 <li><symbol>dull</symbol></li>
