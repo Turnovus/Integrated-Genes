@@ -5,7 +5,7 @@
     <GeneDef>
         <defName>Turn_Gene_Bliss</defName>
         <label>Blissful</label>
-        <description>Carriers of this gene have heavily degraded mental facaulties. They are considerably happier than usual, but are incapable of performing complex work.</description>
+        <description>Carriers of this gene have heavily degraded mental faculties. They are considerably happier than usual, but are incapable of performing complex work.</description>
         <displayCategory>Mood</displayCategory>
         <iconPath>UI/Icons/Genes/Gene_Bliss</iconPath>
         <displayOrderInCategory>200</displayOrderInCategory>
