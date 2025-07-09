@@ -9,7 +9,9 @@
         <iconPath>UI/Icons/Genes/Gene_MeditationNeed</iconPath>
         <displayCategory>Psychic</displayCategory>
         <displayOrderInCategory>3019</displayOrderInCategory>
-        <causesNeed>Turn_Need_GeneticMeditation</causesNeed>
+        <enablesNeeds>
+            <li>Turn_Need_GeneticMeditation</li>
+        </enablesNeeds>
         <biostatMet>3</biostatMet>
         <minAgeActive>7</minAgeActive>
         <customEffectDescriptions>

@@ -51,7 +51,9 @@
         <description>Carriers of this gene have a natural link to gauranlen trees. They need to be soothed by the psychic emanations of a dryad queen, and will suffer from mounting anxiety in the absense of a tree.</description>
         <iconPath>UI/Icons/Genes/Gene_GauranlenNeed</iconPath>
         <displayOrderInCategory>400</displayOrderInCategory>
-        <causesNeed>Turn_Need_GeneticGauranlen</causesNeed>
+        <enablesNeeds>
+            <li>Turn_Need_GeneticGauranlen</li>
+        </enablesNeeds>
         <biostatMet>5</biostatMet>
         <minAgeActive>13</minAgeActive>
         <customEffectDescriptions>
