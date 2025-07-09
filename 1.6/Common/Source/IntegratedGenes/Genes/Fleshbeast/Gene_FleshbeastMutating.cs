@@ -122,11 +122,9 @@ namespace IntegratedGenes
             };
         }
 
-        public override void Tick()
+        public override void TickInterval(int delta)
         {
-            base.Tick();
-
-            if (!pawn.IsHashIntervalTick(CheckIntervalTicks))
+            if (!pawn.IsHashIntervalTick(CheckIntervalTicks, delta))
                 return;
 
             if (!Rand.MTBEventOccurs(Extension.mutationMtbYears, GenDate.TicksPerYear, CheckIntervalTicks))

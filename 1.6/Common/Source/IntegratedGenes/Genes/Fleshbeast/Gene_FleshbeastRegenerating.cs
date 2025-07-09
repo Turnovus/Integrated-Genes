@@ -19,9 +19,9 @@ namespace IntegratedGenes
         
         private Extension_FleshbeastRegenerating Extension => def.GetModExtension<Extension_FleshbeastRegenerating>();
         
-        public override void Tick()
+        public override void TickInterval(int delta)
         {
-            if (pawn.IsHashIntervalTick(Interval))
+            if (pawn.IsHashIntervalTick(Interval, delta))
                 RunRegeneration();
         }
 

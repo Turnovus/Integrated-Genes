@@ -10,7 +10,7 @@ namespace IntegratedGenes
 {
     class Gene_GeneticBiosculpt : Gene
     {
-        public const int INTERVAL = 200;
+        public const int Interval = 200;
 
         private bool isPawnSick = false;
         private HediffDef hediffInt;
@@ -34,10 +34,9 @@ namespace IntegratedGenes
             }
         }
 
-        public override void Tick()
+        public override void TickInterval(int delta)
         {
-            base.Tick();
-            if (!pawn.IsHashIntervalTick(INTERVAL) || pawn.Suspended) return;
+            if (!pawn.IsHashIntervalTick(Interval, delta) || pawn.Suspended) return;
 
             long daysSinceReversal =
                 -pawn.ageTracker.AgeReversalDemandedDeadlineTicks /

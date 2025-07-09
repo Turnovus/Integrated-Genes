@@ -30,10 +30,9 @@ namespace IntegratedGenes
                 GivePsylink(pawn);
         }
 
-        public override void Tick()
+        public override void TickInterval(int delta)
         {
-            base.Tick();
-            if (!pawn.IsHashIntervalTick(CheckInterval))
+            if (!pawn.IsHashIntervalTick(CheckInterval, delta))
                 return;
 
             if (Rand.MTBEventOccurs(

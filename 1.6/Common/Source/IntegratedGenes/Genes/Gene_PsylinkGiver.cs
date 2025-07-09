@@ -35,11 +35,9 @@ namespace IntegratedGenes
             // while the last one (29th) will take x7.5 years
             Math.Pow(2D/1.5D, Math.Floor(NumAbilites / 4D));
 
-        public override void Tick()
+        public override void TickInterval(int delta)
         {
-            base.Tick();
-
-            if (!pawn.IsHashIntervalTick(CheckInterval))
+            if (!pawn.IsHashIntervalTick(CheckInterval, delta))
                 return;
 
             if (!IsCarrierInBackground || StaticUtil.Settings.doUnspawnedLevels)

@@ -29,11 +29,9 @@ namespace IntegratedGenes
             }
         }
 
-        public override void Tick()
+        public override void TickInterval(int delta)
         {
-            base.Tick();
-
-            cooldownTicks = Math.Max(cooldownTicks - 1, 0);
+            cooldownTicks = Math.Max(cooldownTicks - delta, 0);
 
             if (GenDate.DaysPassed < 40) return;
 
