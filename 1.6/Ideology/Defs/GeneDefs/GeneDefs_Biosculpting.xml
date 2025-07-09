@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Defs>
+    <GeneDef Name="Turn_SculpterGeneBase" Abstract="True">
+        <displayCategory>Turn_GeneCategory_Ideology</displayCategory>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>cy</symbol></li>
+                <li><symbol>sculp</symbol></li>
+                <li><symbol>pod</symbol></li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li><symbol>org</symbol></li>
+            </suffixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <GeneDef ParentName="Turn_SculpterGeneBase">
+        <defName>Turn_Gene_BiosculptAccelerated</defName>
+        <label>streamlined anatomy</label>
+        <labelShortAdj>sculptable</labelShortAdj>
+        <description>Carriers of this gene develop biological pathways specially designed to speed up biosculpting.</description>
+        <iconPath>UI/Icons/Genes/Gene_BiosculptAccelerated</iconPath>
+        <displayOrderInCategory>100</displayOrderInCategory>
+        <statOffsets>
+            <BiosculpterOccupantSpeed>0.35</BiosculpterOccupantSpeed>
+        </statOffsets>
+        <biostatMet>-2</biostatMet>
+        
+    </GeneDef>
+
+    <GeneDef ParentName="Turn_SculpterGeneBase">
+        <defName>Turn_Gene_BiosculptNeed</defName>
+        <label>biosculpter dependency</label>
+        <labelShortAdj>sculpt-need</labelShortAdj>
+        <description>Carriers of this gene suffer from a degenerative illness known as "geneblight". This condition will flare up regularly, and worsen over time, unless treated by a biosculpter pod's medical cycle.</description>
+        <descriptionHyperlinks>
+            <ThingDef>BiosculpterPod</ThingDef>
+            <HediffDef>Turn_Hediff_Geneblight</HediffDef>
+        </descriptionHyperlinks>
+        <geneClass>IntegratedGenes.Gene_HediffAnnual</geneClass>
+        <iconPath>UI/Icons/Genes/Gene_BiosculptNeed</iconPath>
+        <displayOrderInCategory>200</displayOrderInCategory>
+        <biostatMet>4</biostatMet>
+        <minAgeActive>13</minAgeActive>
+        <statOffsets>
+            <BiosculpterOccupantSpeed>0.10</BiosculpterOccupantSpeed>
+        </statOffsets>
+        <customEffectDescriptions>
+            <li>Causes geneblight roughly 4 times per year.</li>
+            <li>Must be treated with healing cycle.</li>
+            <li>Lethal if untreated.</li>
+            <li>No effect until day 40.</li>
+        </customEffectDescriptions>
+        <modExtensions>
+            <li Class="IntegratedGenes.DefExtension_HediffAnnual">
+                <hediffDef>Turn_Hediff_Geneblight</hediffDef>
+                <letterString>Geneblight will progress over time, and cannot be treated normally. It must be removed by a biosculpter pod's healing cycle.</letterString>
+                <timesPerYear>3.7</timesPerYear>
+            </li>
+        </modExtensions>
+    </GeneDef>
+</Defs>

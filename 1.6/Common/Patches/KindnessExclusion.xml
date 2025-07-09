@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Patch>
+    <!-- Kind Instinct exclusion -->
+    <Operation Class="PatchOperationConditional">
+        <!-- Kind Instinct already has exclusion tags, but we're patching defensively. -->
+        <xpath>Defs/GeneDef[defName="KindInstinct"]/exclusionTags</xpath>
+        <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/GeneDef[defName="KindInstinct"]</xpath>
+            <value>
+                <exclusionTags>
+                    <li>Turn_Exclusion_Speechless</li>
+                </exclusionTags>
+            </value>
+        </nomatch>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/GeneDef[defName="KindInstinct"]/exclusionTags</xpath>
+            <value>
+                <li>Turn_Exclusion_Speechless</li>
+            </value>
+        </match>
+    </Operation>
+</Patch>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+    <ThoughtDef>
+        <defName>Turn_Thought_StumpLeg</defName>
+        <workerClass>ThoughtWorker_Hediff</workerClass>
+        <hediff>Turn_Hediff_StumpLeg</hediff>
+        <stackLimit>2</stackLimit>
+        <validWhileDespawned>true</validWhileDespawned>
+        <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+
+        <nullifyingTraits>
+            <li>Transhumanist</li>
+        </nullifyingTraits>
+        <nullifyingHediffs>
+            <li>Inhumanized</li>
+        </nullifyingHediffs>
+        <nullifyingPrecepts>
+            <li MayRequire="Ludeon.RimWorld.Ideology">BodyMod_Approved</li>
+        </nullifyingPrecepts>
+
+        <stages>
+            <li>
+                <label>flesh stump</label>
+                <description>I can't stand having to drag this thing around.</description>
+                <baseMoodEffect>-3</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+</Defs>

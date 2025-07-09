@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Defs>
+
+    <!-- Skin color -->
+    <GeneDef ParentName="GeneSkinColorOverride">
+        <defName>Turn_Gene_SkinBrightOrange</defName>
+        <label>bright orange skin</label>
+        <labelShortAdj>very orange</labelShortAdj>
+        <description>Carriers of this gene produce a pigment that gives their skin a crisp orange color.</description>
+        <skinColorOverride>(255, 173, 51)</skinColorOverride>
+        <displayOrderInCategory>69.2</displayOrderInCategory>
+        <randomBrightnessFactor>0.1</randomBrightnessFactor>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>orange</symbol></li>
+                <li><symbol>carrot</symbol></li>
+            </prefixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <GeneDef ParentName="GeneSkinColorOverride">
+        <defName>Turn_Gene_SkinFleshColor</defName>
+        <label>fleshy skin</label>
+        <labelShortAdj>fleshy</labelShortAdj>
+        <description>Carriers of this gene develop raw pinkish skin.</description>
+        <skinColorOverride>(206, 154, 156)</skinColorOverride>
+        <displayOrderInCategory>69.3</displayOrderInCategory>
+        <randomBrightnessFactor>0.5</randomBrightnessFactor>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>meat</symbol></li>
+                <li><symbol>flesh</symbol></li>
+                <li><symbol>skin</symbol></li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li><symbol>beast</symbol></li>
+            </suffixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+    <!-- Eyes -->
+    <GeneDef ParentName="GeneEyeColor">
+        <defName>Turn_Gene_Eyes_Vacuous</defName>
+        <label>vacuous eyes</label>
+        <labelShortAdj>vacuous</labelShortAdj>
+        <description>Carriers of this gene have wide, empty eyes that seem to look right through everything.</description>
+        <iconPath>UI/Icons/Genes/Gene_VacuousEyes</iconPath>
+        <displayOrderInCategory>2</displayOrderInCategory>
+
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>blank</symbol></li>
+                <li><symbol>gaze</symbol></li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li><symbol>stare</symbol></li>
+            </suffixSymbols>
+        </symbolPack>
+
+        <renderNodeProperties>
+            <li Class="PawnRenderNodeProperties_Eye">
+                <texPath>Things/Pawn/Humanlike/HeadAttachments/VacuousEyes</texPath>
+                <texPathFemale>Things/Pawn/Humanlike/HeadAttachments/VacuousEyes</texPathFemale>
+                <anchorTag>RightEye</anchorTag>
+                <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                <parentTagDef>Head</parentTagDef>
+                <drawSize>0.2</drawSize>
+                <side>Right</side>
+                <drawData>
+                    <defaultData>
+                        <layer>54</layer>
+                        <offset>(0, 0, -0.25)</offset>
+                    </defaultData>
+                </drawData>
+            </li>
+            <li Class="PawnRenderNodeProperties_Eye">
+                <texPath>Things/Pawn/Humanlike/HeadAttachments/VacuousEyes</texPath>
+                <texPathFemale>Things/Pawn/Humanlike/HeadAttachments/VacuousEyes</texPathFemale>
+                <anchorTag>LeftEye</anchorTag>
+                <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                <parentTagDef>Head</parentTagDef>
+                <drawSize>0.2</drawSize>
+                <side>Left</side>
+                <drawData>
+                    <defaultData>
+                        <layer>54</layer>
+                        <offset>(0, 0, -0.25)</offset>
+                        <flip>true</flip>
+                    </defaultData>
+                    <dataWest>
+                        <flip>false</flip>
+                    </dataWest>
+                </drawData>
+            </li>
+        </renderNodeProperties>
+    </GeneDef>
+</Defs>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Defs>
+
+    <GeneDef Name="Turn_CertaintyGeneBase" Abstract="True">
+        <displayCategory>Turn_GeneCategory_Ideology</displayCategory>
+        <exclusionTags>
+            <li>Turn_Exclusion_Certainty</li>
+        </exclusionTags>
+    </GeneDef>
+
+    <GeneDef ParentName="Turn_CertaintyGeneBase">
+        <defName>Turn_Gene_Uncertain</defName>
+        <label>uncertain</label>
+        <description>Carriers of this gene have increased neuroplasticity in their frontal lobes, and are more easily influenced by others.</description>
+        <iconPath>UI/Icons/Genes/Gene_Uncertain</iconPath>
+        <displayOrderInCategory>10</displayOrderInCategory>
+        <statFactors>
+            <CertaintyLossFactor>3.0</CertaintyLossFactor>
+        </statFactors>
+        <biostatMet>1</biostatMet>
+    </GeneDef>
+
+    <GeneDef ParentName="Turn_CertaintyGeneBase">
+        <defName>Turn_Gene_Certain</defName>
+        <label>certain</label>
+        <description>Carriers of this gene have reduced neuroplasticity in their frontal lobes, and tend to be less accepting of new ideas.</description>
+        <iconPath>UI/Icons/Genes/Gene_Certain</iconPath>
+        <displayOrderInCategory>14</displayOrderInCategory>
+        <statFactors>
+            <CertaintyLossFactor>0.1</CertaintyLossFactor>
+        </statFactors>
+    </GeneDef>
+
+    <GeneDef ParentName="Turn_CertaintyGeneBase">
+        <defName>Turn_Gene_HerdMentality</defName>
+        <label>herd-minded</label>
+        <description>Carriers of this gene develop a compulsion to imitate their peers, allowing popular consensus to dictate their beliefs.</description>
+        <iconPath>UI/Icons/Genes/Gene_HerdMentality</iconPath>
+        <displayOrderInCategory>18</displayOrderInCategory>
+        <biostatMet>-2</biostatMet>
+        <customEffectDescriptions>
+            <li>Primary ideo certainty loss: x10%</li>
+            <li>Secondary ideo certainty loss: x300%</li>
+        </customEffectDescriptions>
+    </GeneDef>
+
+</Defs>

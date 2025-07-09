@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patch>
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>Defs/GeneDef[defName="ViolenceDisabled"]/exclusionTags</xpath>
+        <value>
+            <li>Turn_Exclusion_Duelist_Nonviolent</li>
+        </value>
+    </Operation>
+
+</Patch>
