@@ -16,6 +16,9 @@ namespace IntegratedGenes
             pawn.health.RestorePart(part);
             pawn.health.AddHediff(mutationDef, part);
 
+            if (pawn.MapHeld == null)
+                return;
+            
             for (int index = 0; index < 3; ++index)
                 pawn.health.DropBloodFilth();
 
