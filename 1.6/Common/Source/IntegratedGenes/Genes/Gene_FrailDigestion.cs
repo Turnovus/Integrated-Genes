@@ -23,7 +23,7 @@ namespace IntegratedGenes
         {
             base.Notify_IngestedThing(thing, numTaken);
 
-            if (thing.def.IsRawFood() && Rand.Chance(VomitChance))
+            if (thing.def.IsRawHumanFood() && Rand.Chance(VomitChance))
                 TryForceVomit(pawn);
         }
     }
