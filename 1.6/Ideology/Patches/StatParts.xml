@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Patch>
+
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PatchOperationConditional">
+                <xpath>Defs/StatDef[defName="CertaintyLossFactor"]/parts</xpath>
+                <nomatch Class="PatchOperationAdd">
+                    <xpath>Defs/StatDef[defName="CertaintyLossFactor"]</xpath>
+                    <value><parts/></value>
+                </nomatch>
+            </li>
+            <li Class="PatchOperationAdd">
+                <xpath>Defs/StatDef[defName="CertaintyLossFactor"]/parts</xpath>
+                <value>
+                    <li Class="IntegratedGenes.StatPart_CertaintyGenetic">
+                        <gene>Turn_Gene_HerdMentality</gene>
+                        <factorPrimary>0.1</factorPrimary>
+                        <factorSecondary>3.0</factorSecondary>
+                    </li>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+
+</Patch>

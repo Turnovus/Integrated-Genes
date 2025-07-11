@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Defs>
+
+    <!-- Voices -->
+    <GeneDef ParentName="GeneVoiceBase">
+        <defName>Turn_Gene_VoiceDryad</defName>
+        <label>dryad voice</label>
+        <description>Carriers of this gene have vocal chords that can imitate the croaks and warbles of dryads.</description>
+        <iconPath>UI/Icons/Genes/Gene_VoiceDryad</iconPath>
+        <displayOrderInCategory>132</displayOrderInCategory>
+        <soundCall>Pawn_Dryad_Call</soundCall>
+        <!-- <soundDeath>Pawn_Dryad_Call</soundDeath> -->
+        <soundWounded>Pawn_Dryad_Wounded</soundWounded>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>croak</symbol></li>
+                <li><symbol>squeak</symbol></li>
+                <li><symbol>warble</symbol></li>
+                <li><symbol>tree</symbol></li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li><symbol>frog</symbol></li>
+                <li><symbol>toad</symbol></li>
+            </suffixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+</Defs>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Defs>
+    <HediffDef ParentName = "DiseaseBase">
+        <defName>Turn_Hediff_Geneblight</defName>
+        <label>geneblight</label>
+        <descriptionShort>Degenerative illness requiring a biosculpter's healing cycle.</descriptionShort>
+        <description>A degenerative genetic disorder that causes increasing cellular instability, resulting in death. It can be treated temporarily by a biosculpter pod's healing cycle, but the only way to prevent future affliction is to remove the underlying genetic defect.</description>
+        <makesSickThought>true</makesSickThought>
+        <lethalSeverity>1.0</lethalSeverity>
+        <initialSeverity>0.01</initialSeverity>
+        <comps>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>0.2</severityPerDay> <!-- 5 days to live -->
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <label>minor</label>
+                <painOffset>0.05</painOffset>
+                <vomitMtbDays>10.0</vomitMtbDays>
+                <capMods>
+                    <li>
+                        <capacity>BloodFiltration</capacity>
+                        <offset>-0.05</offset>
+                    </li>
+                </capMods>
+                <statOffsets>
+                    <ImmunityGainSpeed>-0.05</ImmunityGainSpeed>
+                </statOffsets>
+            </li>
+            <li>
+                <label>minor</label>
+                <minSeverity>0.10</minSeverity>
+                <painOffset>0.05</painOffset>
+                <vomitMtbDays>5.0</vomitMtbDays>
+                <capMods>
+                    <li>
+                        <capacity>BloodFiltration</capacity>
+                        <offset>-0.10</offset>
+                    </li>
+                    <li>
+                        <capacity>Breathing</capacity>
+                        <offset>-0.05</offset>
+                    </li>
+                </capMods>
+                <statOffsets>
+                    <InjuryHealingFactor>-0.1</InjuryHealingFactor>
+                    <ImmunityGainSpeed>-0.15</ImmunityGainSpeed>
+                </statOffsets>
+            </li>
+            <li>
+                <label>major</label>
+                <minSeverity>0.40</minSeverity>
+                <painOffset>0.15</painOffset>
+                <vomitMtbDays>1.0</vomitMtbDays>
+                <capMods>
+                    <li>
+                        <capacity>BloodFiltration</capacity>
+                        <offset>-0.30</offset>
+                    </li>
+                    <li>
+                        <capacity>Breathing</capacity>
+                        <offset>-0.15</offset>
+                    </li>
+                </capMods>
+                <statOffsets>
+                    <InjuryHealingFactor>-0.2</InjuryHealingFactor>
+                    <ImmunityGainSpeed>-0.60</ImmunityGainSpeed>
+                </statOffsets>
+            </li>
+            <li>
+                <label>severe</label>
+                <minSeverity>0.60</minSeverity>
+                <painOffset>0.35</painOffset>
+                <vomitMtbDays>0.33333</vomitMtbDays>
+                <capMods>
+                    <li>
+                        <capacity>BloodFiltration</capacity>
+                        <offset>-0.60</offset>
+                    </li>
+                    <li>
+                        <capacity>Breathing</capacity>
+                        <offset>-0.35</offset>
+                    </li>
+                </capMods>
+                <statOffsets>
+                    <InjuryHealingFactor>-0.4</InjuryHealingFactor>
+                    <ImmunityGainSpeed>-0.80</ImmunityGainSpeed>
+                </statOffsets>
+            </li>
+            <li>
+                <label>extreme</label>
+                <minSeverity>0.80</minSeverity>
+                <lifeThreatening>true</lifeThreatening>
+                <painOffset>0.65</painOffset>
+                <vomitMtbDays>0.1</vomitMtbDays>
+                <capMods>
+                    <li>
+                        <capacity>BloodFiltration</capacity>
+                        <offset>-0.80</offset>
+                    </li>
+                    <li>
+                        <capacity>Breathing</capacity>
+                        <offset>-0.70</offset>
+                    </li>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <setMax>0.1</setMax>
+                      </li>
+                </capMods>
+                <statOffsets>
+                    <InjuryHealingFactor>-0.8</InjuryHealingFactor>
+                    <ImmunityGainSpeed>-0.95</ImmunityGainSpeed>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef ParentName="DiseaseBase">
+        <defName>Turn_Hediff_TerrifiedFaintingSpell</defName>
+        <label>fainting spell</label>
+        <labelNoun>a fainting spell</labelNoun>
+        <description>A state of critically low blood pressure due to intense stress, causing a loss of consciousness as the body attempts to recover.</description>
+        <comps>
+            <li Class="HediffCompProperties_Disappears">
+                <!-- An hour or two -->
+                <disappearsAfterTicks>5000~10000</disappearsAfterTicks>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <capMods>
+                    <li>
+                        <capacity>Consciousness</capacity>
+                        <setMax>0.1</setMax>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+    </HediffDef>
+</Defs>

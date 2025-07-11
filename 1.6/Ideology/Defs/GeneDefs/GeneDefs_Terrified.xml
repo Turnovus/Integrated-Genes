@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Defs>
+
+    <GeneDef>
+        <defName>Turn_Gene_Terrified</defName>
+        <label>terrified</label>
+        <labelShortAdj>scared</labelShortAdj>
+        <description>Carriers of this gene have an overactive fight-or-flight response, and are easily frightened in many situations. They can't even handle basic combat without becoming overwhelmed and fainting.</description>
+        <geneClass>IntegratedGenes.Gene_Terrified</geneClass>
+        <iconPath>UI/Icons/Genes/Gene_Terrified</iconPath>
+        <displayCategory>Turn_GeneCategory_Slavery</displayCategory>
+        <customEffectDescriptions>
+            <li>May have a fainting spell while in combat.</li>
+            <li>Fainting frequency depends on surrounding terror level.</li>
+          </customEffectDescriptions>
+        <statOffsets>
+            <RoyalFavorValue MayRequire="Ludeon.RimWorld.Royalty">0.5</RoyalFavorValue>
+        </statOffsets>
+        <statFactors>
+            <Terror>1.5</Terror>
+        </statFactors>
+        <biostatMet>2</biostatMet>
+
+        <!-- Obsolete -->
+        <!-- A little over once per hour -->
+        <!--<mentalBreakMtbDays>0.03</mentalBreakMtbDays>-->
+        <mentalBreakDef>Turn_MentalBreak_TerrifiedFaintingSpell</mentalBreakDef>
+
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>faint</symbol></li>
+                <li><symbol>fear</symbol></li>
+                <li><symbol>fraidy</symbol></li>
+                <li><symbol>shriek</symbol></li>
+                <li><symbol>spook</symbol></li>
+                <li><symbol>terror</symbol></li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li><symbol>cat</symbol></li>
+                <li><symbol>faller</symbol></li>
+                <li><symbol>screamer</symbol></li>
+            </suffixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+</Defs>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+    <HediffDef ParentName="AddedMutationBase">
+        <defName>Turn_Hediff_StumpLeg</defName>
+        <label>stump leg</label>
+        <labelNoun>a stump leg</labelNoun>
+        <description>A fleshy boneless mass of skin and muscle, serving as a sort of awkward meaty peg leg.\n\nThe flesh lump has its own neural structures and may become dangerous if removed.</description>
+        <defaultInstallPart>Leg</defaultInstallPart>
+
+        <stages>
+            <li>
+                <statOffsets>
+                    <PawnBeauty>-0.5</PawnBeauty>
+                </statOffsets>
+            </li>
+        </stages>
+
+        <addedPartProps>
+            <solid>true</solid>
+            <partEfficiency>0.65</partEfficiency>
+        </addedPartProps>
+
+        <comps>
+            <li Class="HediffCompProperties_FleshbeastEmerge">
+                <letterLabel>Fleshmass operation</letterLabel>
+                <letterText>Attempting to remove {PAWN_nameDef}'s stump has caused the twisting mass of flesh to attack. The fleshmass has detached from {PAWN_nameDef} and transformed into a fleshbeast!</letterText>
+            </li>
+        </comps>
+    </HediffDef>
+</Defs>

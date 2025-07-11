@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Defs>
+    <GeneDef>
+        <defName>Turn_Gene_ArchotechAttunement</defName>
+        <label>archotech attunement</label>
+        <labelShortAdj>psylinked</labelShortAdj>
+        <description>Carriers of this gene have special archites in their neurons, maintaining and improving their psychic link to distant archotech intelligences.</description>
+        <geneClass>IntegratedGenes.Gene_PsylinkGiver</geneClass>
+        <iconPath>UI/Icons/Genes/Gene_ArchotechAttunement</iconPath>
+        <displayCategory>Archite</displayCategory>
+        <marketValueFactor>1.08</marketValueFactor>
+        <biostatCpx>2</biostatCpx>
+        <biostatArc>3</biostatArc>
+        <customEffectDescriptions>
+            <li>Periodically grants new psylink levels.</li>
+            <li>Grants abilities at a diminishing rate.</li>
+            <li>Requires an existing psylink.</li>
+        </customEffectDescriptions>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>brain</symbol></li>
+                <li><symbol>link</symbol></li>
+                <li><symbol>archo</symbol></li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li><symbol>linker</symbol></li>
+                <li><symbol>caster</symbol></li>
+            </suffixSymbols>
+        </symbolPack>
+        <modExtensions>
+            <li Class="IntegratedGenes.DefExtension_PsychicGene">
+                <!-- Years per level-up -->
+                <triggerIntervalYears>0.80</triggerIntervalYears>
+            </li>
+        </modExtensions>
+    </GeneDef>
+
+    <GeneDef>
+        <defName>Turn_Gene_LatentPsychic</defName>
+        <label>latent psychic</label>
+        <description>Carriers of this gene have an innate psychic attunement. This attunement does not provide an immediate psychic link, but may allow the carrier to form one naturally at some point in life.</description>
+        <geneClass>IntegratedGenes.Gene_PsylinkGiver</geneClass>
+        <iconPath>UI/Icons/Genes/Gene_LatentPsychic</iconPath>
+        <displayCategory>Psychic</displayCategory>
+        <biostatMet>-1</biostatMet>
+        <displayOrderInCategory>2022</displayOrderInCategory>
+        <customEffectDescriptions>
+            <li>May grant a level 1 psylink at random.</li>
+            <li>Periodically grants new psylink levels up to level 3.</li>
+            <li>Grants abilities at a diminishing rate.</li>
+        </customEffectDescriptions>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>brain</symbol></li>
+                <li><symbol>link</symbol></li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li><symbol>linker</symbol></li>
+                <li><symbol>caster</symbol></li>
+            </suffixSymbols>
+        </symbolPack>
+        <modExtensions>
+            <li Class="IntegratedGenes.DefExtension_PsychicGene">
+                <triggerIntervalYears>5.5</triggerIntervalYears>
+                <!-- Roughly the age when the carrier should get their link -->
+                <grantPsylinkAgeYears>45.0</grantPsylinkAgeYears>
+                <maxLevel>3</maxLevel>
+            </li>
+        </modExtensions>
+    </GeneDef>
+</Defs>

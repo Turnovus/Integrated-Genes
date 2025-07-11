@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Defs>
+
+    <!-- Facial overlays -->
+    <GeneDef ParentName="Turn_GauranlenGeneBase">
+        <defName>Turn_Gene_DryadFace</defName>
+        <label>dryad face</label>
+        <description>Carriers of this gene develop a wide mouth and grow a throat sac, producing a dryad-like appearance.</description>
+        <iconPath>UI/Icons/Genes/Gene_DryadFace</iconPath>
+        <displayCategory Inherit="False">Cosmetic</displayCategory>
+        <iconColor>(0.75, 0.75, 0.75)</iconColor>
+        <displayOrderInCategory>500</displayOrderInCategory>
+        <biostatCpx>0</biostatCpx>
+        <renderNodeProperties>
+            <li>
+                <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+                <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+                <parentTagDef>Head</parentTagDef>
+                <colorType>Skin</colorType>
+                <useRottenColor>true</useRottenColor>
+                <useSkinShader>true</useSkinShader>
+                <rotDrawMode>Fresh, Rotting</rotDrawMode>
+                <texPaths>
+                    <li>Things/Pawn/Humanlike/HeadAttachments/DryadFace/DryadFace</li>
+                </texPaths>
+                <visibleFacing>
+                    <li>East</li>
+                    <li>South</li>
+                    <li>West</li>
+                </visibleFacing>
+                <narrowCrownHorizontalOffset>0.03</narrowCrownHorizontalOffset>
+                <baseLayer>51</baseLayer>
+            </li>
+        </renderNodeProperties>
+    </GeneDef>
+</Defs>

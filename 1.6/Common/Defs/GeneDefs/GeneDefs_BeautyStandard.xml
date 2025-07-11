@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Defs>
+
+    <GeneDef Name="Turn_BeautyStandardGeneBase" Abstract="True">
+        <displayCategory>Beauty</displayCategory>
+        <exclusionTags>
+            <li>Turn_Exclusion_BeautyStandard</li>
+        </exclusionTags>
+    </GeneDef>
+
+    <GeneDef ParentName="Turn_BeautyStandardGeneBase">
+        <defName>Turn_Gene_LowBeautyStandard</defName>
+        <label>low standards</label>
+        <labelShortAdj>low standards</labelShortAdj>
+        <description>Carriers of this gene are incapable of developing negative opinions of others without reason, though they are still capable of appreciating beauty.</description>
+        <iconPath>UI/Icons/Genes/Gene_LowBeautyStandard</iconPath>
+        <displayOrderInCategory>3050</displayOrderInCategory>
+        <customEffectDescriptions>
+            <li>Will ignore ugliness, annoying voice, creepy breathing, and disfigurement.</li>
+        </customEffectDescriptions>
+        <biostatMet>-1</biostatMet>
+        <suppressedTraits>
+            <li><def>DislikesMen</def></li>
+            <li><def>DislikesWomen</def></li>
+        </suppressedTraits>
+    </GeneDef>
+ 
+    <GeneDef ParentName="Turn_BeautyStandardGeneBase">
+        <defName>Turn_Gene_HighBeautyStandard</defName>
+        <label>high standards</label>
+        <labelShortAdj>picky</labelShortAdj>
+        <description>Carriers of this gene are physically revolted by anyone they perceive as less attractive than themselves.</description>
+        <iconPath>UI/Icons/Genes/Gene_HighBeautyStandard</iconPath>
+        <displayOrderInCategory>3060</displayOrderInCategory>
+        <customEffectDescriptions>
+            <li>Mood penalty from low beauty</li>
+            <li>Other pawn lower beauty opinion: -40</li>
+        </customEffectDescriptions>
+        <exclusionTags>
+            <li>Turn_Exclusion_Blindness</li>
+        </exclusionTags>
+        <biostatMet>1</biostatMet>
+        <symbolPack>
+            <prefixSymbols>
+                <li><symbol>snob</symbol></li>
+                <li><symbol>prude</symbol></li>
+            </prefixSymbols>
+            <suffixSymbols>
+                <li><symbol>seer</symbol></li>
+                <li><symbol>eye</symbol></li>
+            </suffixSymbols>
+        </symbolPack>
+    </GeneDef>
+
+</Defs>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<LanguageData>
+
+    <StatPartExplanationGeneticCertainty>{0} gene ({1})</StatPartExplanationGeneticCertainty>
+    <StatPartExplanationGeneticCertaintyPrimary>Majority</StatPartExplanationGeneticCertaintyPrimary>
+    <StatPartExplanationGeneticCertaintySecondary>Minority</StatPartExplanationGeneticCertaintySecondary>
+
+</LanguageData>

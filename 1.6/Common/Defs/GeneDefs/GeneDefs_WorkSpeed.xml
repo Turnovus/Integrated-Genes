@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+    <GeneDef Name="Turn_Gene_WorkSpeedBase" Abstract="True">
+        <displayCategory>Miscellaneous</displayCategory>
+        <exclusionTags>
+            <li>Turn_Exclusion_WorkSpeed</li>
+        </exclusionTags>
+    </GeneDef>
+
+    <GeneDef ParentName="Turn_Gene_WorkSpeedBase">
+        <defName>Turn_Gene_MotivationLow</defName>
+        <label>low motivation</label>
+        <labelShortAdj>lazy</labelShortAdj>
+        <description>Carriers of this gene develop a deficit of reward-signaling chemicals in their brain, which causes a strong aversion to strenuous or monotonous work.</description>
+        <iconPath>UI/Icons/Genes/Gene_MotivationLow</iconPath>
+        <displayOrderInCategory>22000</displayOrderInCategory>
+        <statFactors>
+            <GeneralLaborSpeed>0.75</GeneralLaborSpeed>
+        </statFactors>
+        <biostatMet>2</biostatMet>
+    </GeneDef>
+
+    <GeneDef ParentName="Turn_Gene_WorkSpeedBase">
+        <defName>Turn_Gene_MotivationHigh</defName>
+        <label>high motivation</label>
+        <labelShortAdj>laboring</labelShortAdj>
+        <description>Carriers of this gene develop neural pathways that encourage strenuous or monotonous work.</description>
+        <iconPath>UI/Icons/Genes/Gene_MotivationHigh</iconPath>
+        <displayOrderInCategory>22010</displayOrderInCategory>
+        <statFactors>
+            <GeneralLaborSpeed>1.3</GeneralLaborSpeed>
+        </statFactors>
+        <biostatMet>-2</biostatMet>
+    </GeneDef>
+
+</Defs>

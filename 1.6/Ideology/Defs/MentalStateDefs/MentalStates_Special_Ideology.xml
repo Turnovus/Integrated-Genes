@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Defs>
+    <MentalBreakDef>
+        <defName>Turn_MentalBreak_TerrifiedFaintingSpell</defName>
+        <label>fainting spell</label>
+        <intensity>Minor</intensity>
+        <workerClass>IntegratedGenes.MentalBreakWorker_FaintingSpell</workerClass>
+        <requiredGene>Turn_Gene_Terrified</requiredGene>
+    </MentalBreakDef>
+</Defs>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Defs>
+
+    <ThoughtDef>
+        <defName>Turn_Thought_GeneticMeditation</defName>
+        <workerClass>IntegratedGenes.ThoughtWorker_GeneticMeditation</workerClass>
+        <validWhileDespawned>true</validWhileDespawned>
+        <stages>
+            <!-- need <= THRESH_CRIT -->
+            <li>
+                <label>overwhelming stress</label>
+                <description>My thoughts are racing. It feels like the whole world is closing in on my mind. I really need to clear my head.</description>
+                <baseMoodEffect>-20</baseMoodEffect>
+            </li>
+            <!-- need <= THRESH_LOW -->
+            <li>
+                <label>intense stress</label>
+                <description>I'm bogged down by all kinds of unpleasent thoughts. I need some time to clear my head.</description>
+                <baseMoodEffect>-10</baseMoodEffect>
+            </li>
+            <!-- need <= THRESH_MIN -->
+            <li>
+                <label>minor stress</label>
+                <description>I'm starting to feel weary. I should take some time to clear my head soon.</description>
+                <baseMoodEffect>-5</baseMoodEffect>
+            </li>
+            <!-- need > THRESH_HIGH -->
+            <li>
+                <label>calm mind</label>
+                <description>I feel so relaxed. It's good to take a step back to reflect.</description>
+                <baseMoodEffect>4</baseMoodEffect>
+            </li>
+        </stages>
+    </ThoughtDef>
+
+</Defs>
