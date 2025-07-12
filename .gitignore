@@ -4,8 +4,12 @@ Common/Source/IntegratedGenes/obj/
 
 */Common/Source/IntegratedGenes/.vs/
 */Common/Source/IntegratedGenes/obj/
+*/VPECompat/Source/IntegratedGenes.VPECompat/.vs/
+*/VPECompat/Source/IntegratedGenes.VPECompat/IntegratedGenes.VPECompat/obj/
 
 */Common/Source/IntegratedGenes/.idea
 */Common/Source/IntegratedGenes/packages
+*/VPECompat/Source/IntegratedGenes.VPECompat/.idea
+*/VPECompat/Source/IntegratedGenes.VPECompat/packages
 
 *.user
