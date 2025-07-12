@@ -10,6 +10,7 @@ namespace IntegratedGenes
         [MayRequireIdeology]
         public static HediffDef Turn_Hediff_TerrifiedFaintingSpell;
         
+        [MayRequireIdeology]
         public static MentalBreakDef Turn_MentalBreak_TerrifiedFaintingSpell;
         
         [MayRequireRoyalty]
@@ -17,6 +18,7 @@ namespace IntegratedGenes
         [MayRequireIdeology]
         public static NeedDef Turn_Need_GeneticGauranlen;
         
+        [MayRequireIdeology]
         public static StatDef Turn_Stat_TerrifiedFaintingInterval;
 #pragma warning restore CS0649
 
