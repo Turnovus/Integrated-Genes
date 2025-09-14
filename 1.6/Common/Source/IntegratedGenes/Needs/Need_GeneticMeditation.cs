@@ -71,5 +71,11 @@ namespace IntegratedGenes
                 CurLevel = Math.Max(CurLevel - RateFall, solace);
             }
         }
+
+        public override void ExposeData()
+        {
+            base.ExposeData();
+            Scribe_Values.Look(ref solace, "solace");
+        }
     }
 }
