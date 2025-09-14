@@ -26,7 +26,7 @@ namespace IntegratedGenes
         {
             if (!req.HasThing) return;
             Pawn p = req.Thing as Pawn;
-            if (!ActiveForPawn(p)) return;
+            if (p == null || !ActiveForPawn(p)) return;
             val *= IsPawnInMainIdeo(p) ? factorPrimary : factorSecondary;
         }
 
