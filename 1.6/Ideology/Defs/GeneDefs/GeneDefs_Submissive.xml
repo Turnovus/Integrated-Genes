@@ -11,7 +11,7 @@
         <displayCategory>Turn_GeneCategory_Slavery</displayCategory>
         <socialFightChanceFactor>0.25</socialFightChanceFactor>
         <aggroMentalBreakSelectionChanceFactor>0.25</aggroMentalBreakSelectionChanceFactor>
-        <prisonBreakMTBFactor>0.25</prisonBreakMTBFactor>
+        <prisonBreakMTBFactor>4.00</prisonBreakMTBFactor>
         <displayOrderInCategory>501</displayOrderInCategory>
         <customEffectDescriptions>
             <li>Mood bonus while enslaved.</li>
