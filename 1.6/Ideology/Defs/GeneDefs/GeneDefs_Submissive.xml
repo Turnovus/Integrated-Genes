@@ -2,7 +2,7 @@
 
 <Defs>
 
-    <GeneDef ParentName="GeneAggressionBase">
+    <GeneDef>
         <!-- Yeah, it's misspelled, but it's too late to change now. -->
         <defName>Turn_Gene_AgressionSubmissive</defName>
         <label>submissive</label>
@@ -25,6 +25,7 @@
         </statFactors>
         <exclusionTags>
             <li>Turn_Exclusion_FreeSpirit</li>
+            <li>Turn_Exclusion_Submissive</li>
         </exclusionTags>
         <biostatMet>-2</biostatMet>
         <symbolPack>
