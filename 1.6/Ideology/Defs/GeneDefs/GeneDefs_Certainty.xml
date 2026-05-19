@@ -39,10 +39,19 @@
         <iconPath>UI/Icons/Genes/Gene_HerdMentality</iconPath>
         <displayOrderInCategory>18</displayOrderInCategory>
         <biostatMet>-2</biostatMet>
-        <customEffectDescriptions>
-            <li>Primary ideo certainty loss: x10%</li>
-            <li>Secondary ideo certainty loss: x300%</li>
-        </customEffectDescriptions>
+        
+        <conditionalStatAffecters>
+            <li Class="IntegratedGenes.ConditionalStatAffector_MajorityIdeo">
+                <statFactors>
+                    <CertaintyLossFactor>0.1</CertaintyLossFactor>
+                </statFactors>
+            </li>
+            <li Class="IntegratedGenes.ConditionalStatAffector_MinorityIdeo">
+                <statFactors>
+                    <CertaintyLossFactor>3.0</CertaintyLossFactor>
+                </statFactors>
+            </li>
+        </conditionalStatAffecters>
     </GeneDef>
 
 </Defs>
