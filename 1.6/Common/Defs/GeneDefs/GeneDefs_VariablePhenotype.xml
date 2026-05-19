@@ -20,6 +20,12 @@
         <modExtensions>
             <li Class="IntegratedGenes.Extension_VariablePhenotype">
                 <xenogeneCount>2~5</xenogeneCount>
+                <reusableCategories>
+                    <li>Hemogen</li>
+                    <li>Healing</li>
+                    <li>ResistanceAndWeakness</li>
+                    <li>Miscellaneous</li>
+                </reusableCategories>
             </li>
         </modExtensions>
     </GeneDef>
