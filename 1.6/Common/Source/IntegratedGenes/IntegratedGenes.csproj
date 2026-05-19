@@ -87,6 +87,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="AI\ThinkNodes\ThinkNode_Priority_GetMeditationGenetic.cs" />
     <Compile Include="StaticUtil.cs" />
+    <Compile Include="Stats\ConditionalStatAffector_Ideo.cs" />
     <Compile Include="Stats\StatPart_CertaintyGenetic.cs" />
     <Compile Include="Stats\StatWorker_Fainting.cs" />
     <Compile Include="ThoughtWorkers\Mood\ThoughtWorker_GeneticGauranlen.cs" />

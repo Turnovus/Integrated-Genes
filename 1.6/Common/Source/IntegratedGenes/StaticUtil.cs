@@ -92,6 +92,9 @@ namespace IntegratedGenes
 
             return ERoleType.Specialist;
         }
+        
+        public static bool IsPawnInMainIdeo(Pawn p) =>
+            p.Faction?.ideos?.PrimaryIdeo != null && p.ideo?.Ideo != null && p.Faction.ideos.PrimaryIdeo == p.ideo.Ideo;
 
         public enum ERoleType
         {
