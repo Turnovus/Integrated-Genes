@@ -10,6 +10,8 @@ namespace IntegratedGenes
         
         private bool generated = false;
 
+        private List<GeneCategoryDef> usedCategories;
+
         private Extension_VariablePhenotype Extension => def.GetModExtension<Extension_VariablePhenotype>();
 
         public override void ExposeData()
@@ -29,6 +31,8 @@ namespace IntegratedGenes
 
         private void DoGeneGeneration()
         {
+            usedCategories = new List<GeneCategoryDef>();
+            
             int geneCount = Extension.xenogeneCount.RandomInRange;
             for (int i = 0; i < geneCount; i++)
             {
@@ -45,7 +49,11 @@ namespace IntegratedGenes
                     break;
 
                 pawn.genes.AddGene(chosenDef, true);
+                if (!Extension.reusableCategories.Contains(chosenDef.displayCategory))
+                    usedCategories.Add(chosenDef.displayCategory);
             }
+
+            usedCategories = null;
         }
 
         private bool CanPickRandomGene(GeneDef geneDef)
@@ -57,6 +65,9 @@ namespace IntegratedGenes
                 return false;
 
             if (geneDef == def)
+                return false;
+
+            if (usedCategories.Contains(geneDef.displayCategory))
                 return false;
 
             if (geneDef.biostatMet + GetBiostatMet(pawn) < MinMetabolism)
@@ -89,5 +100,6 @@ namespace IntegratedGenes
     public class Extension_VariablePhenotype : DefModExtension
     {
         public IntRange xenogeneCount;
+        public List<GeneCategoryDef> reusableCategories = new List<GeneCategoryDef>();
     }
 }

@@ -18,6 +18,7 @@ namespace IntegratedGenes
         public float offsetForFactionLeader;
         public float offsetForIdeoMoralist;
         public float offsetForIdeoSpecialist;
+        public float conceitedFactor = 1f;
 #pragma warning restore CS0649
     }
 }

@@ -5,5 +5,7 @@
     <StatPartExplanationGeneticCertainty>{0} gene ({1})</StatPartExplanationGeneticCertainty>
     <StatPartExplanationGeneticCertaintyPrimary>Majority</StatPartExplanationGeneticCertaintyPrimary>
     <StatPartExplanationGeneticCertaintySecondary>Minority</StatPartExplanationGeneticCertaintySecondary>
+    <StatsReport_MajorityIdeo>following majority ideoligion</StatsReport_MajorityIdeo>
+    <StatsReport_MinorityIdeo>following minority ideoligion</StatsReport_MinorityIdeo>
 
 </LanguageData>

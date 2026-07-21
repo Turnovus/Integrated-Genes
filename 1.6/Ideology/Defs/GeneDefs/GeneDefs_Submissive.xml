@@ -2,7 +2,7 @@
 
 <Defs>
 
-    <GeneDef ParentName="GeneAggressionBase">
+    <GeneDef>
         <!-- Yeah, it's misspelled, but it's too late to change now. -->
         <defName>Turn_Gene_AgressionSubmissive</defName>
         <label>submissive</label>
@@ -11,7 +11,7 @@
         <displayCategory>Turn_GeneCategory_Slavery</displayCategory>
         <socialFightChanceFactor>0.25</socialFightChanceFactor>
         <aggroMentalBreakSelectionChanceFactor>0.25</aggroMentalBreakSelectionChanceFactor>
-        <prisonBreakMTBFactor>0.25</prisonBreakMTBFactor>
+        <prisonBreakMTBFactor>4.00</prisonBreakMTBFactor>
         <displayOrderInCategory>501</displayOrderInCategory>
         <customEffectDescriptions>
             <li>Mood bonus while enslaved.</li>
@@ -25,6 +25,7 @@
         </statFactors>
         <exclusionTags>
             <li>Turn_Exclusion_FreeSpirit</li>
+            <li>Turn_Exclusion_Submissive</li>
         </exclusionTags>
         <biostatMet>-2</biostatMet>
         <symbolPack>

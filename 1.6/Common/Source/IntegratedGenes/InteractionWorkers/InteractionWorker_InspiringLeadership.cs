@@ -15,7 +15,7 @@ namespace IntegratedGenes
 
         public GeneDef RequiredGene => Extension?.requiredGene;
 
-        public float InteractionWeight => Extension?.interactionWeight ?? 1f;
+        public float InteractionWeight => Extension?.interactionWeight ?? 0f;
 
         public override float RandomSelectionWeight(Pawn initiator, Pawn recipient)
         {
@@ -69,6 +69,9 @@ namespace IntegratedGenes
             }
 
             n += pawn.RoyalTitleLevel() * Extension.offsetForTitleLevel;
+
+            if (RoyalTitleUtility.GetConceitedTraits(pawn).Any())
+                n *= Extension.conceitedFactor;
 
             return n;
         }
