@@ -15,7 +15,7 @@ namespace IntegratedGenes
             if (p.guest?.IsPrisoner != true)
                 return ThoughtState.Inactive;
 
-            return p.guest.HostFaction?.IsPlayer == true ?
+            return p.Faction?.IsPlayer == true ?
                 ThoughtState.ActiveAtStage(1) :
                 ThoughtState.ActiveAtStage(0);
         }
