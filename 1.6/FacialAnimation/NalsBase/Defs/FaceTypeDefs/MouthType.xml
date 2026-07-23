@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+    <FacialAnimation.MouthTypeDef MayRequre="Ludeon.RimWorld.Ideology">
+        <defName>Turn_MouthType_Dryad</defName>
+        <texPath>Things/Pawn/Humanlike/Mouth/Dryad</texPath>
+        <shader>Map/Transparent</shader>
+        <targetGeneDefs>
+            <li>Turn_Gene_DryadFace</li>
+        </targetGeneDefs>
+    </FacialAnimation.MouthTypeDef>
+</Defs>
