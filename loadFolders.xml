@@ -20,5 +20,8 @@
         <li IfModActive="Ludeon.RimWorld.Ideology">1.6/Ideology</li>
         <li IfModActive="Ludeon.RimWorld.Anomaly">1.6/Anomaly</li>
         <li IfModActive="VanillaExpanded.VPsycastsE">1.6/VPECompat</li>
+
+        <!-- Facial animations -->
+        <li IfModActive="Nals.FacialAnimation">1.6/FacialAnimation/NalsBase</li>
     </v1.6>
 </loadFolders>
