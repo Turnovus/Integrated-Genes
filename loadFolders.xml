@@ -23,5 +23,6 @@
 
         <!-- Facial animations -->
         <li IfModActive="Nals.FacialAnimation">1.6/FacialAnimation/NalsBase</li>
+        <li IfModActive="VanillaExpanded.VTEXE.FacialAnims">1.6/FacialAnimation/VanillaTexturesExpanded</li>
     </v1.6>
 </loadFolders>
