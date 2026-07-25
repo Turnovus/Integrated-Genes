@@ -6,7 +6,7 @@
         <defName>Turn_Gene_NaturalLeader</defName>
         <label>natural leader</label>
         <labelShortAdj>leading</labelShortAdj>
-        <description>Carriers of this gene develop a set of mental, emotional, and psychic traits that make them naturally adept at leading others.\n\nCarriers gain access to a special social interaction, which can temporarily boost the working speed of the recipient, as long as they do not also carry this gene.\n\nCarriers who are greedy, jealous, or abrasive will exude a greater sense of authority, and are more effective when using inspired leadership.</description>
+        <description>Carriers of this gene develop a set of mental, emotional, and psychic traits that make them naturally adept at leading others.\n\nCarriers gain access to inspired leadership, a special social interaction that temporarily boosts the working speed of the recipient, as long as they do not also carry this gene.\n\nCarriers who are greedy, jealous, or abrasive will exude a greater sense of authority, and are more effective when using inspired leadership.</description>
         <iconPath>UI/Icons/Genes/Gene_NaturalLeader</iconPath>
         <displayCategory>Miscellaneous</displayCategory>
         <exclusionTags>
