@@ -21,13 +21,7 @@ namespace IntegratedGenes
         public string LetterString =>
             Ext.letterString;
 
-        public bool IsPawnSick
-        {
-            get
-            {
-                return pawn.health.hediffSet.HasHediff(SicknessHediff);
-            }
-        }
+        public bool IsPawnSick => pawn.health.hediffSet.HasHediff(SicknessHediff);
 
         public override void TickInterval(int delta)
         {
@@ -66,7 +60,7 @@ namespace IntegratedGenes
             Command_Action commandAction = new Command_Action
             {
                 defaultLabel = "DEV: Make Sick",
-                action = new Action(() => MakeSickNow())
+                action = MakeSickNow
             };
             yield return commandAction;
         }
