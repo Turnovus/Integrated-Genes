@@ -75,13 +75,7 @@ namespace IntegratedGenes
         public void RemoveHediff()
         {
             if (!isPawnSick) return;
-            Hediff hediff = null;
-            foreach (Hediff h in pawn.health.hediffSet.hediffs)
-                if (hediff.def == SicknessHediff)
-                {
-                    hediff = h;
-                    break;
-                }
+            Hediff hediff = pawn.health.hediffSet.GetFirstHediffOfDef(SicknessHediff);
             if (hediff != null)
                 pawn.health.RemoveHediff(hediff);
 
