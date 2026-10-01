@@ -68,7 +68,6 @@
     <Compile Include="Genes\Fleshbeast\Gene_FleshbeastRegenerating.cs" />
     <Compile Include="Genes\Fleshbeast\IntegratedFleshbeastUtility.cs" />
     <Compile Include="Genes\Gene_FrailDigestion.cs" />
-    <Compile Include="Genes\Gene_GeneticBiosculpt.cs" />
     <Compile Include="Genes\Gene_HediffAnnual.cs" />
     <Compile Include="Genes\Gene_LatentPsychic.cs" />
     <Compile Include="Genes\Gene_PsylinkGiver.cs" />
