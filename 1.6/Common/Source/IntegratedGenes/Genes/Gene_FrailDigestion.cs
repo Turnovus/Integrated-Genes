@@ -15,6 +15,15 @@ namespace IntegratedGenes
 
         public static void TryForceVomit(Pawn pawn)
         {
+            if (!pawn.Spawned)
+            {
+                // Simulate vomiting for non-spawned pawns
+                Need_Food food = pawn.needs.food;
+                if (food != null)
+                    food.CurLevel *= 0.8f;
+                return;
+            }
+            
             Job vomit = JobMaker.MakeJob(JobDefOf.Vomit);
             pawn.jobs.StartJob(vomit, JobCondition.InterruptForced, resumeCurJobAfterwards: true);
         }
